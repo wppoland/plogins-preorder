@@ -1,0 +1,66 @@
+/**
+ * Preorder — settings screen styling.
+ *
+ * Modern, dark-mode-aware, motion-safe. Scoped to the Pre-orders settings page
+ * via .preorder-settings so it never leaks into the rest of wp-admin.
+ */
+
+.preorder-settings {
+	--preorder-accent: #2271b1;
+	--preorder-fg: #1d2327;
+	--preorder-muted: #50575e;
+	--preorder-border: #dcdcde;
+	--preorder-card: #fff;
+}
+
+.preorder-settings .preorder-intro {
+	max-width: 46rem;
+	margin: 0.5rem 0 1.25rem;
+	padding: 0.85rem 1rem;
+	border-left: 4px solid var(--preorder-accent);
+	background: var(--preorder-card);
+	border-radius: 4px;
+	color: var(--preorder-muted);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.preorder-settings .preorder-toggle {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	font-weight: 500;
+	color: var(--preorder-fg);
+}
+
+.preorder-settings .form-table th {
+	width: 220px;
+}
+
+.preorder-settings input[type="text"]:focus-visible,
+.preorder-settings input[type="checkbox"]:focus-visible {
+	outline: 2px solid var(--preorder-accent);
+	outline-offset: 2px;
+}
+
+.preorder-settings .description {
+	max-width: 42rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.preorder-settings input[type="text"] {
+		transition: border-color 0.15s ease, box-shadow 0.15s ease;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.preorder-settings {
+		--preorder-fg: #e2e4e7;
+		--preorder-muted: #a7aaad;
+		--preorder-border: #3c434a;
+		--preorder-card: #1e1e1e;
+	}
+
+	.preorder-settings .preorder-intro {
+		box-shadow: none;
+	}
+}
