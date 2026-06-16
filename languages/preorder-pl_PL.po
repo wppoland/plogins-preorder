@@ -4,17 +4,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Preorder - Pre-Orders for WooCommerce 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/preorder\n"
+"POT-Creation-Date: 2026-06-16T20:23:51+00:00\n"
+"PO-Revision-Date: 2026-06-15 00:00+0000\n"
 "Last-Translator: WPPoland <kontakt@wppoland.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "Language: pl_PL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-06-14T21:56:19+00:00\n"
-"PO-Revision-Date: 2026-06-15 00:00+0000\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: preorder\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
+"|| n%100>14) ? 1 : 2);\n"
 
 #. Plugin Name of the plugin
 #: preorder.php
@@ -28,8 +29,13 @@ msgstr "https://plogins.com/preorder/"
 
 #. Description of the plugin
 #: preorder.php
-msgid "Let customers pre-order upcoming or out-of-stock WooCommerce products with a custom add-to-cart button."
-msgstr "Pozwól klientom zamawiać w przedsprzedaży nadchodzące lub niedostępne produkty WooCommerce dzięki niestandardowemu przyciskowi dodawania do koszyka."
+msgid ""
+"Let customers pre-order upcoming or out-of-stock WooCommerce products with a "
+"custom add-to-cart button."
+msgstr ""
+"Pozwól klientom zamawiać w przedsprzedaży nadchodzące lub niedostępne "
+"produkty WooCommerce dzięki niestandardowemu przyciskowi dodawania do "
+"koszyka."
 
 #. Author of the plugin
 #: preorder.php
@@ -41,23 +47,26 @@ msgstr "WPPoland"
 msgid "https://plogins.com/"
 msgstr "https://plogins.com/"
 
-#: preorder.php:46
-msgid "Preorder - Pre-Orders for WooCommerce requires WooCommerce to be active."
+#: preorder.php:47
+msgid ""
+"Preorder - Pre-Orders for WooCommerce requires WooCommerce to be active."
 msgstr "Preorder - Przedsprzedaż dla WooCommerce wymaga aktywnego WooCommerce."
 
-#: src/Admin/ProductDataPanel.php:32
-#: src/Service/PreorderService.php:148
-#: src/Service/PreorderService.php:170
+#: src/Admin/ProductDataPanel.php:32 src/Service/PreorderService.php:212
+#: src/Service/PreorderService.php:234
 msgid "Pre-order"
 msgstr "Przedsprzedaż"
 
 #: src/Admin/ProductDataPanel.php:33
-msgid "Sell this product as a pre-order. It stays purchasable even when out of stock."
-msgstr "Sprzedawaj ten produkt w przedsprzedaży. Pozostaje dostępny do kupienia nawet po wyczerpaniu zapasów."
+msgid ""
+"Sell this product as a pre-order. It stays purchasable even when out of "
+"stock."
+msgstr ""
+"Sprzedawaj ten produkt w przedsprzedaży. Pozostaje dostępny do kupienia "
+"nawet po wyczerpaniu zapasów."
 
-#: src/Admin/Settings.php:45
-#: src/Admin/Settings.php:46
-#: src/Admin/Settings.php:99
+#: src/Admin/Settings.php:45 src/Admin/Settings.php:46
+#: src/Admin/Settings.php:119
 msgid "Pre-orders"
 msgstr "Przedsprzedaż"
 
@@ -65,48 +74,110 @@ msgstr "Przedsprzedaż"
 msgid "Settings"
 msgstr "Ustawienia"
 
-#: src/Admin/Settings.php:103
+#: src/Admin/Settings.php:123
 msgid "Settings saved."
 msgstr "Ustawienia zostały zapisane."
 
-#: src/Admin/Settings.php:108
-msgid "Mark individual products as pre-orders from the product editor (Product data → General). These options control the storefront defaults."
-msgstr "Oznaczaj poszczególne produkty jako dostępne w przedsprzedaży w edytorze produktu (Dane produktu → Ogólne). Te opcje sterują domyślnymi ustawieniami sklepu."
+#: src/Admin/Settings.php:128
+msgid ""
+"Flag any product as a pre-order from the product editor (Product data → "
+"General). The options here set the store-wide defaults that those products "
+"inherit."
+msgstr ""
 
-#: src/Admin/Settings.php:119
+#: src/Admin/Settings.php:136
+msgid "Storefront behaviour"
+msgstr ""
+
+#: src/Admin/Settings.php:138
+msgid "Controls whether the pre-order rules run on your live store."
+msgstr ""
+
+#: src/Admin/Settings.php:145
 msgid "Enable pre-orders"
 msgstr "Włącz przedsprzedaż"
 
-#: src/Admin/Settings.php:131
+#: src/Admin/Settings.php:157
 msgid "Apply pre-order behaviour on the storefront."
 msgstr "Stosuj zachowanie przedsprzedaży w sklepie."
 
-#: src/Admin/Settings.php:134
-msgid "When off, products flagged as pre-orders behave like normal products. Turn this off to pause pre-orders store-wide without editing each product."
-msgstr "Po wyłączeniu produkty oznaczone jako przedsprzedaż zachowują się jak zwykłe produkty. Wyłącz tę opcję, aby wstrzymać przedsprzedaż w całym sklepie bez edytowania każdego produktu."
+#: src/Admin/Settings.php:160
+msgid ""
+"Lets flagged products stay purchasable while out of stock and shows the pre-"
+"order button. Turn this off to pause every pre-order store-wide in one click "
+"— without un-flagging each product. Default: on."
+msgstr ""
 
-#: src/Admin/Settings.php:140
+#: src/Admin/Settings.php:169
+msgid "Pre-order button"
+msgstr ""
+
+#: src/Admin/Settings.php:171
+msgid "The label shoppers see in place of the usual add-to-cart text."
+msgstr ""
+
+#: src/Admin/Settings.php:178
 msgid "Default button text"
 msgstr "Domyślny tekst przycisku"
 
-#: src/Admin/Settings.php:149
+#: src/Admin/Settings.php:191
+msgid "Shoppers see:"
+msgstr ""
+
+#. translators: %s: default button label, e.g. "Pre-order now".
+#: src/Admin/Settings.php:198
+#, php-format
+msgid ""
+"Replaces the add-to-cart label on pre-order products. Leave blank to use %s. "
+"Any single product can override this from its own editor."
+msgstr ""
+
+#: src/Admin/Settings.php:209
+msgid "Save changes"
+msgstr "Zapisz zmiany"
+
+#: src/Admin/Settings.php:218
+msgid "You do not have permission to manage these settings."
+msgstr "Nie masz uprawnień do zarządzania tymi ustawieniami."
+
+#: src/Service/PreorderService.php:163
+msgid "Reserved as a pre-order"
+msgstr ""
+
+#: src/Service/PreorderService.php:164
+msgid ""
+"Not in stock yet — your order holds a place in line and ships when it "
+"arrives."
+msgstr ""
+
+#: src/Service/PreorderService.php:213 src/Service/PreorderService.php:234
+msgid "Yes"
+msgstr "Tak"
+
 #: src/Settings.php:50
 msgid "Pre-order now"
 msgstr "Zamów w przedsprzedaży"
 
-#: src/Admin/Settings.php:153
-msgid "Add-to-cart label shown for pre-order products. Individual products can override this in the product editor."
-msgstr "Etykieta przycisku dodawania do koszyka wyświetlana dla produktów w przedsprzedaży. Poszczególne produkty mogą ją nadpisać w edytorze produktu."
+#~ msgid ""
+#~ "Mark individual products as pre-orders from the product editor (Product "
+#~ "data → General). These options control the storefront defaults."
+#~ msgstr ""
+#~ "Oznaczaj poszczególne produkty jako dostępne w przedsprzedaży w edytorze "
+#~ "produktu (Dane produktu → Ogólne). Te opcje sterują domyślnymi "
+#~ "ustawieniami sklepu."
 
-#: src/Admin/Settings.php:160
-msgid "Save changes"
-msgstr "Zapisz zmiany"
+#~ msgid ""
+#~ "When off, products flagged as pre-orders behave like normal products. "
+#~ "Turn this off to pause pre-orders store-wide without editing each product."
+#~ msgstr ""
+#~ "Po wyłączeniu produkty oznaczone jako przedsprzedaż zachowują się jak "
+#~ "zwykłe produkty. Wyłącz tę opcję, aby wstrzymać przedsprzedaż w całym "
+#~ "sklepie bez edytowania każdego produktu."
 
-#: src/Admin/Settings.php:169
-msgid "You do not have permission to manage these settings."
-msgstr "Nie masz uprawnień do zarządzania tymi ustawieniami."
-
-#: src/Service/PreorderService.php:149
-#: src/Service/PreorderService.php:170
-msgid "Yes"
-msgstr "Tak"
+#~ msgid ""
+#~ "Add-to-cart label shown for pre-order products. Individual products can "
+#~ "override this in the product editor."
+#~ msgstr ""
+#~ "Etykieta przycisku dodawania do koszyka wyświetlana dla produktów w "
+#~ "przedsprzedaży. Poszczególne produkty mogą ją nadpisać w edytorze "
+#~ "produktu."
