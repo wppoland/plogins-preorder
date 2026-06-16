@@ -61,6 +61,14 @@ changes, and the cart and order lines are flagged as pre-orders.
 Yes. Turn off the global toggle under **WooCommerce → Pre-orders** and flagged
 products behave like normal products until you turn it back on.
 
+= Can guests buy pre-order products? =
+
+Yes, when the product is purchasable and your store allows guest checkout.
+
+= How are pre-orders shown in the cart? =
+
+Cart and order line items are flagged so you and the customer can see which lines are pre-orders.
+
 == Screenshots ==
 
 1. The pre-order field in the WooCommerce product editor.
