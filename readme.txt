@@ -22,8 +22,14 @@ On the storefront, pre-order products get a custom add-to-cart label (for exampl
 "Pre-order now"), and each pre-order line is flagged in the cart and copied onto
 the order, so you can tell pre-orders apart when you pack and ship.
 
-The plugin is developed in the open. Source and bug reports:
-https://github.com/wppoland/preorder
+= Documentation and links =
+
+* **Documentation** - https://plogins.com/preorder/docs/
+* **Plugin page** - https://plogins.com/preorder/
+* **Source code** - https://github.com/wppoland/preorder
+* **Bug reports and feature requests** - https://github.com/wppoland/preorder/issues
+* **Discussions and questions** - https://github.com/wppoland/preorder/discussions
+
 
 = Features =
 
