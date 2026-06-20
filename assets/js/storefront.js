@@ -10,18 +10,63 @@
  * is suppressed there; we still toggle the class so the dot reaches its rest
  * state).
  */
-( function () {
+( function ( $ ) {
 	'use strict';
 
 	function validate( stub ) {
 		if ( ! stub ) {
 			return;
 		}
-		// Restart the animation cleanly on repeat presses.
 		stub.classList.remove( 'is-validated' );
-		// Force reflow so the class re-add re-triggers the keyframe.
 		void stub.offsetWidth;
 		stub.classList.add( 'is-validated' );
+	}
+
+	function setStubVisible( stub, visible ) {
+		if ( ! stub ) {
+			return;
+		}
+		stub.classList.toggle( 'preorder-stub--hidden', ! visible );
+		if ( visible ) {
+			validate( stub );
+		}
+	}
+
+	function defaultButtonText( button ) {
+		if ( ! button ) {
+			return '';
+		}
+		return button.getAttribute( 'data-preorder-default-text' ) || button.textContent || '';
+	}
+
+	function setButtonText( button, text ) {
+		if ( ! button || ! text ) {
+			return;
+		}
+		button.textContent = text;
+	}
+
+	function initVariableProduct( stub, form ) {
+		var button = form.querySelector( '.single_add_to_cart_button' );
+
+		if ( button && ! button.getAttribute( 'data-preorder-default-text' ) ) {
+			button.setAttribute( 'data-preorder-default-text', button.textContent || '' );
+		}
+
+		$( form ).on( 'show_variation', function ( event, variation ) {
+			var isPreorder = variation && variation.preorder_is_preorder;
+			setStubVisible( stub, !! isPreorder );
+			if ( isPreorder && variation.preorder_add_to_cart_text ) {
+				setButtonText( button, variation.preorder_add_to_cart_text );
+			} else {
+				setButtonText( button, defaultButtonText( button ) );
+			}
+		} );
+
+		$( form ).on( 'hide_variation', function () {
+			setStubVisible( stub, false );
+			setButtonText( button, defaultButtonText( button ) );
+		} );
 	}
 
 	function init() {
@@ -30,15 +75,20 @@
 			return;
 		}
 
-		// First punch: the stub is issued.
-		validate( stub );
+		if ( ! stub.hasAttribute( 'data-preorder-variable' ) ) {
+			validate( stub );
+		}
 
-		// Re-punch at the moment of commitment.
-		var form = stub.closest( 'form.cart' ) ||
-			document.querySelector( 'form.cart' );
+		var form = stub.closest( 'form.cart' ) || document.querySelector( 'form.cart' );
 		if ( form ) {
+			if ( stub.hasAttribute( 'data-preorder-variable' ) ) {
+				initVariableProduct( stub, form );
+			}
+
 			form.addEventListener( 'submit', function () {
-				validate( stub );
+				if ( ! stub.classList.contains( 'preorder-stub--hidden' ) ) {
+					validate( stub );
+				}
 			} );
 		}
 	}
@@ -48,4 +98,4 @@
 	} else {
 		init();
 	}
-} )();
+}( window.jQuery ) );

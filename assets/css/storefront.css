@@ -12,6 +12,10 @@
  * Zero layout shift, no jQuery, prefers-reduced-motion + dark-scheme aware.
  */
 
+.preorder-stub--hidden {
+	display: none;
+}
+
 .preorder-stub {
 	/* Reserved-ink amber: a stamped claim-ticket tone, never default blue. */
 	--preorder-ink: var(--preorder-accent, #b4612a);

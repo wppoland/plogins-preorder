@@ -4,7 +4,7 @@ Tags: woocommerce, preorder, pre-order, backorder, out of stock
 Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 8.1
-Stable tag: 0.1.0
+Stable tag: 0.1.1
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -91,6 +91,10 @@ line carries a "Pre-order: Yes" line item meta value. No email is sent by the
 plugin.
 
 == Changelog ==
+
+= 0.1.1 =
+* Add `preorder/is_preorder` filter and variation inheritance in `ProductMeta`.
+* Expose per-variation pre-order state on the variations form for add-ons.
 
 = 0.1.0 =
 * Initial release: per-product pre-order flag, custom button text, out-of-stock purchasability, and cart and order flagging, with a settings screen.
