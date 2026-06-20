@@ -46,6 +46,9 @@ final class PreorderService implements HasHooks
         add_filter('woocommerce_product_single_add_to_cart_text', [$this, 'filterButtonText'], 10, 2);
         add_filter('woocommerce_product_add_to_cart_text', [$this, 'filterButtonText'], 10, 2);
 
+        // Per-variation pre-order data for the variations form.
+        add_filter('woocommerce_available_variation', [$this, 'addVariationData'], 10, 3);
+
         // Storefront: show the reservation stub on the single product page.
         add_action('woocommerce_single_product_summary', [$this, 'renderStub'], 25);
         add_action('wp_enqueue_scripts', [$this, 'enqueueAssets']);
@@ -125,7 +128,7 @@ final class PreorderService implements HasHooks
         }
 
         $product = wc_get_product(get_the_ID());
-        if (! $this->applies($product)) {
+        if (! $product instanceof \WC_Product || ! $this->meta->hasPreorderInTree($product)) {
             return;
         }
 
@@ -139,9 +142,17 @@ final class PreorderService implements HasHooks
         wp_enqueue_script(
             'preorder-storefront',
             PREORDER_URL . 'assets/js/storefront.js',
-            [],
+            ['jquery'],
             \Preorder\VERSION,
             true
+        );
+
+        wp_localize_script(
+            'preorder-storefront',
+            'preorderStorefront',
+            [
+                'buttonText' => $this->settings->defaultButtonText(),
+            ],
         );
     }
 
@@ -156,14 +167,19 @@ final class PreorderService implements HasHooks
     {
         global $product;
 
-        if (! $this->applies($product)) {
+        if (! $product instanceof \WC_Product || ! $this->meta->hasPreorderInTree($product)) {
             return;
         }
 
-        $title = __('Reserved as a pre-order', 'preorder');
-        $note  = __('Not in stock yet — your order holds a place in line and ships when it arrives.', 'preorder');
+        $visible = $this->applies($product);
+        $title   = __('Reserved as a pre-order', 'preorder');
+        $note    = __('Not in stock yet — your order holds a place in line and ships when it arrives.', 'preorder');
 
-        echo '<div class="preorder-stub" role="note">';
+        printf(
+            '<div class="preorder-stub%1$s" role="note"%2$s>',
+            $visible ? '' : ' preorder-stub--hidden',
+            $product->is_type('variable') ? ' data-preorder-variable="1"' : '',
+        );
         echo '<span class="preorder-stub__punch" aria-hidden="true"></span>';
         echo '<span class="preorder-stub__label">';
         echo '<span class="preorder-stub__title">';
@@ -173,6 +189,24 @@ final class PreorderService implements HasHooks
         echo '<span class="preorder-stub__note">' . esc_html($note) . '</span>';
         echo '</span>';
         echo '</div>';
+    }
+
+    /**
+     * Expose per-variation pre-order state to the variations form JSON.
+     *
+     * @param array<string, mixed> $data
+     * @return array<string, mixed>
+     */
+    public function addVariationData(array $data, \WC_Product_Variable $product, \WC_Product_Variation $variation): array
+    {
+        unset($product);
+
+        $isPreorder = $this->applies($variation);
+
+        $data['preorder_is_preorder']     = $isPreorder;
+        $data['preorder_add_to_cart_text'] = $isPreorder ? $this->settings->defaultButtonText() : '';
+
+        return $data;
     }
 
     /**

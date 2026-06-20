@@ -24,7 +24,7 @@ namespace {
 
 namespace Preorder {
     if (! defined('Preorder\\VERSION')) {
-        define('Preorder\\VERSION', '0.1.0');
+        define('Preorder\\VERSION', '0.1.1');
     }
     if (! defined('Preorder\\PLUGIN_FILE')) {
         define('Preorder\\PLUGIN_FILE', '/tmp/preorder/preorder.php');
