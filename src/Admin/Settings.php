@@ -157,7 +157,7 @@ final class Settings implements HasHooks
                                         <?php echo esc_html__('Apply pre-order behaviour on the storefront.', 'preorder'); ?>
                                     </label>
                                     <p class="description" id="preorder-enabled-help">
-                                        <?php echo esc_html__('Lets flagged products stay purchasable while out of stock and shows the pre-order button. Turn this off to pause every pre-order store-wide in one click — without un-flagging each product. Default: on.', 'preorder'); ?>
+                                        <?php echo esc_html__('Lets flagged products stay purchasable while out of stock and shows the pre-order button. Turn this off to pause every pre-order store-wide in one click, without un-flagging each product. Default: on.', 'preorder'); ?>
                                     </p>
                                 </td>
                             </tr>
