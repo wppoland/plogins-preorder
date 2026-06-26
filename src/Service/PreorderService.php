@@ -174,7 +174,7 @@ final class PreorderService implements HasHooks
 
         $visible = $this->applies($product);
         $title   = __('Reserved as a pre-order', 'preorder');
-        $note    = __('Not in stock yet — your order holds a place in line and ships when it arrives.', 'preorder');
+        $note    = __('Not in stock yet, your order holds a place in line and ships when it arrives.', 'preorder');
         $release = $visible ? $this->meta->releaseDate($product) : '';
 
         printf(

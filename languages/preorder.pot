@@ -88,7 +88,7 @@ msgid "Apply pre-order behaviour on the storefront."
 msgstr ""
 
 #: src/Admin/Settings.php:160
-msgid "Lets flagged products stay purchasable while out of stock and shows the pre-order button. Turn this off to pause every pre-order store-wide in one click — without un-flagging each product. Default: on."
+msgid "Lets flagged products stay purchasable while out of stock and shows the pre-order button. Turn this off to pause every pre-order store-wide in one click, without un-flagging each product. Default: on."
 msgstr ""
 
 #: src/Admin/Settings.php:169
@@ -126,7 +126,7 @@ msgid "Reserved as a pre-order"
 msgstr ""
 
 #: src/Service/PreorderService.php:164
-msgid "Not in stock yet — your order holds a place in line and ships when it arrives."
+msgid "Not in stock yet, your order holds a place in line and ships when it arrives."
 msgstr ""
 
 #: src/Service/PreorderService.php:213
