@@ -74,6 +74,11 @@ Yes, when the product is purchasable and your store allows guest checkout.
 
 Cart and order line items are flagged so you and the customer can see which lines are pre-orders.
 
+
+= Does this plugin work on WordPress Multisite? =
+
+Yes. This plugin is compatible with WordPress Multisite. Network activate it or activate it on individual sites; each site keeps its own settings and data.
+
 == Screenshots ==
 
 1. The pre-order field in the WooCommerce product editor.
