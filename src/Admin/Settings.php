@@ -23,8 +23,15 @@ final class Settings implements HasHooks
     private const NONCE  = 'preorder_save_settings';
     private const ACTION = 'preorder_settings';
 
+    private ?ProUpsell $proUpsell = null;
+
     public function __construct(private readonly SettingsStore $store)
     {
+    }
+
+    private function proUpsell(): ProUpsell
+    {
+        return $this->proUpsell ??= new ProUpsell();
     }
 
     public function registerHooks(): void
@@ -36,6 +43,7 @@ final class Settings implements HasHooks
             'plugin_action_links_' . plugin_basename(\Preorder\PLUGIN_FILE),
             [$this, 'addSettingsLink'],
         );
+        $this->proUpsell()->registerHooks();
     }
 
     public function addMenuPage(): void
@@ -118,6 +126,8 @@ final class Settings implements HasHooks
         <div class="wrap preorder-settings">
             <h1><?php echo esc_html__('Pre-orders', 'plogins-preorder'); ?></h1>
 
+            <?php $this->proUpsell()->banner(); ?>
+
             <?php if ($saved) : ?>
                 <div class="notice notice-success is-dismissible" role="status">
                     <p><?php echo esc_html__('Settings saved.', 'plogins-preorder'); ?></p>
@@ -128,6 +138,7 @@ final class Settings implements HasHooks
                 <?php echo esc_html__('Flag any product as a pre-order from the product editor (Product data → General). The options here set the store-wide defaults that those products inherit.', 'plogins-preorder'); ?>
             </p>
 
+            <div class="preorder-cols">
             <form method="post" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
                 <input type="hidden" name="action" value="<?php echo esc_attr(self::ACTION); ?>" />
                 <?php wp_nonce_field(self::NONCE); ?>
@@ -208,6 +219,11 @@ final class Settings implements HasHooks
 
                 <?php submit_button(__('Save changes', 'plogins-preorder')); ?>
             </form>
+
+                <?php $this->proUpsell()->aside(); ?>
+            </div>
+
+            <?php $this->proUpsell()->cards(); ?>
         </div>
         <?php
     }
