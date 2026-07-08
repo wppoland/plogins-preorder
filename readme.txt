@@ -4,7 +4,7 @@ Tags: woocommerce, preorder, pre-order, backorder, out of stock
 Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 8.1
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -94,7 +94,14 @@ flag is stored as the `_preorder_enabled` product meta, and each pre-order order
 line carries a "Pre-order: Yes" line item meta value. No email is sent by the
 plugin.
 
+== Translations ==
+
+Plogins Preorder includes Polish, German and Spanish translations for the plugin interface. The text domain is `plogins-preorder`, so WordPress.org language packs can also override or extend these bundled translations.
+
 == Changelog ==
+
+= 1.0.2 =
+* Added bundled Polish, German and Spanish translations for the plugin interface.
 
 = 1.0.1 =
 * First stable release.

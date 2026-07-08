@@ -1,0 +1,70 @@
+# wp.org Stable Readme translation (es_ES)
+msgid ""
+msgstr ""
+"Project-Id-Version: preorder Stable Readme\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: plogins-i18n\n"
+
+msgid "Requires Plugins: woocommerce"
+msgstr "Requiere complementos: woocommerce"
+
+msgid "Let customers pre-order upcoming or out-of-stock WooCommerce products with a custom add-to-cart button."
+msgstr "Permita que los clientes realicen pedidos anticipados de productos WooCommerce próximos o agotados con un botón personalizado para añadir al carrito."
+
+msgid "Preorder lets you sell WooCommerce products before they are in stock. Tick a box\non the product and it stays purchasable even when its stock status is out of\nstock, so a customer can reserve an upcoming release or a restock instead of\nlanding on a dead \"out of stock\" page."
+msgstr "El pedido anticipado le permite vender productos WooCommerce antes de que estén disponibles. Marque una casilla\nen el producto y permanece adquirible incluso cuando su estado de existencias está agotado\nstock, por lo que un cliente puede reservar un próximo lanzamiento o un reabastecimiento en lugar de\naterrizando en una página muerta de \"agotado\"."
+
+msgid "On the storefront, pre-order products get a custom add-to-cart label (for example\n\"Pre-order now\"), and each pre-order line is flagged in the cart and copied onto\nthe order, so you can tell pre-orders apart when you pack and ship."
+msgstr "En el escaparate, los productos pedidos por adelantado obtienen una etiqueta personalizada para añadir al carrito (por ejemplo\n\"Reservar ahora\"), y cada línea de pedido anticipado se marca en el carrito y se copia en\nel pedido, para que pueda diferenciar los pedidos anticipados al empacar y enviar."
+
+msgid "* <strong>Documentation</strong> - https://plogins.com/plogins-preorder/docs/\n* <strong>Plugin page</strong> - https://plogins.com/plogins-preorder/\n* <strong>Source code</strong> - https://github.com/wppoland/plogins-preorder\n* <strong>Bug reports and feature requests</strong> - https://github.com/wppoland/plogins-preorder/issues"
+msgstr "* <strong>Documentación</strong> - https://plogins.com/es/plogins-preorder/docs/\n* <strong>Página de complementos</strong> - https://plogins.com/es/plogins-preorder/\n* <strong>Código fuente</strong> - https://github.com/wppoland/plogins-preorder\n* <strong>Informes de errores y solicitudes de funciones</strong> - https://github.com/wppoland/plogins-preorder/issues"
+
+msgid "* A <strong>Pre-order</strong> checkbox on every product, under <strong>Product data → General</strong>.\n* A custom add-to-cart label for pre-order products, set store-wide.\n* Pre-order products stay purchasable while their stock status is out of stock.\n* The cart and checkout show a \"Pre-order: Yes\" row on each pre-order line.\n* That flag is copied onto the order line item, so it shows on the order screen and packing slips.\n* A <strong>WooCommerce → Pre-orders</strong> screen with a store-wide on/off switch and the default button text.\n* Pausing the on/off switch makes flagged products behave like normal products again, without editing each one.\n* Forms are nonce-checked and limited to users who can manage WooCommerce; output is escaped and input sanitised.\n* Ships with a translation template (plogins-preorder.pot) and a Polish translation; removing the plugin deletes its setting.\n* Works with WooCommerce HPOS and the cart and checkout blocks."
+msgstr "* Una casilla de verificación <strong>Pre-pedido</strong> en cada producto, en <strong>Datos del producto → General</strong>.\n* Una etiqueta personalizada para añadir al carrito para productos en preventa, configurada en toda la tienda.\n* Los productos reservados se pueden comprar mientras su estado de existencias esté agotado.\n* El carrito y el proceso de pago muestran una fila \"Pedido anticipado: Sí\" en cada línea de pedido anticipado.\n* Esa bandera se copia en la línea de pedido del pedido, por lo que se muestra en la pantalla del pedido y en los albaranes.\n* Una pantalla <strong>WooCommerce → Pedidos anticipados</strong> con un interruptor de encendido/apagado para toda la tienda y el texto del botón predeterminado.\n* Al pausar el interruptor de encendido/apagado, los productos marcados se comportan nuevamente como productos normales, sin editar cada uno.\n* Los formularios no están verificados y están limitados a usuarios que pueden administrar WooCommerce; la salida se escapa y la entrada se desinfecta.\n* Se envía con una plantilla de traducción (plogins-preorder.pot) y una traducción al polaco; Al eliminar el complemento se elimina tu configuración.\n* Funciona con WooCommerce HPOS y los bloques de carrito y pago."
+
+msgid "1. Upload the plugin to `/wp-content/plugins/preorder`, or install via Plugins → Add New.\n2. Activate it. WooCommerce must be active.\n3. Edit a product, open <strong>Product data → General</strong>, and tick <strong>Pre-order<strong>. 4. Adjust store-wide defaults under </strong>WooCommerce → Pre-orders</strong>."
+msgstr "1. Cargue el complemento en `/wp-content/plugins/preorder`, o instálelo a través de Complementos → Añadir nuevo.\n2. Actívalo. WooCommerce debe estar activo.\n3. Edite un producto, abra <strong>Datos del producto → General</strong> y marque <strong>Reservar<strong>. 4. Ajuste los valores predeterminados de toda la tienda en </strong>WooCommerce → Pedidos anticipados</strong>."
+
+msgid "Yes. WooCommerce must be installed and active."
+msgstr "Sí. WooCommerce debe estar instalado y activo."
+
+msgid "It becomes purchasable even when out of stock, its add-to-cart button label\nchanges, and the cart and order lines are flagged as pre-orders."
+msgstr "Se puede comprar incluso cuando está agotado, su etiqueta del botón Añadir al carrito\ncambios, y el carrito y las líneas de pedido se marcan como pedidos anticipados."
+
+msgid "Yes. Turn off the global toggle under <strong>WooCommerce → Pre-orders</strong> and flagged\nproducts behave like normal products until you turn it back on."
+msgstr "Sí. Desactive la opción global en <strong>WooCommerce → Pedidos anticipados</strong> y marque\nLos productos se comportan como productos normales hasta que los vuelves a encender."
+
+msgid "Yes, when the product is purchasable and your store allows guest checkout."
+msgstr "Sí, cuando el producto se puede comprar y su tienda permite el pago como invitado."
+
+msgid "Cart and order line items are flagged so you and the customer can see which lines are pre-orders."
+msgstr "Los artículos del carrito y de las líneas de pedido se marcan para que tú y el cliente puedan ver qué líneas son pedidos anticipados."
+
+msgid "Yes. This plugin is compatible with WordPress Multisite. Network activate it or activate it on individual sites; each site keeps its own settings and data."
+msgstr "Sí. Este complemento es compatible con WordPress Multisite. Activarlo en red o activarlo en sitios individuales; Cada sitio mantiene su propia configuración y datos."
+
+msgid "1. The pre-order field in the WooCommerce product editor.\n2. The WooCommerce → Pre-orders settings screen."
+msgstr "1. El campo de pedido anticipado en el editor de productos de WooCommerce.\n2. La pantalla de configuración de pedidos anticipados de WooCommerce →."
+
+msgid "Preorder does not connect to any external services. It makes no outbound HTTP\nrequests, loads no remote scripts, fonts, or analytics, and sends no data off\nyour site. Everything runs on your own WordPress install: the store-wide button\ntext and on/off switch live in the `preorder_settings` option, the per-product\nflag is stored as the `_preorder_enabled` product meta, and each pre-order order\nline carries a \"Pre-order: Yes\" line item meta value. No email is sent by the\nplugin."
+msgstr "El pedido anticipado no se conecta a ningún servicio externo. No hace HTTP saliente\nsolicita, no carga scripts, fuentes o análisis remotos y no envía datos\ntu sitio. Todo se ejecuta en tu propia instalación de WordPress: el botón para toda la tienda\nEl texto y el interruptor de encendido/apagado se encuentran en la opción `preorder_settings`, el valor por producto\nEl indicador se almacena como el meta del producto `_preorder_enabled`, y cada pedido anticipado\nLa línea lleva un metavalor de línea de pedido \"Pre-pedido: Sí\". No se envía ningún correo electrónico por parte del\ncomplemento."
+
+msgid "* First stable release."
+msgstr "* Primera versión estable."
+
+msgid "* Renamed to Plogins Preorder for WooCommerce for a more distinctive plugin name."
+msgstr "* Renombrado a Plogins Preorder para WooCommerce para obtener un nombre de complemento más distintivo."
+
+msgid "* Expected release date field on products (`ProductMeta::META_RELEASE_DATE`, `preorder/release_date` filter).\n* Release date shown on the storefront pre-order stub and in variation JSON.\n* Hidden `_preorder_line` order item meta for add-on queries."
+msgstr "* Campo de fecha de lanzamiento esperada en productos (filtro `ProductMeta::META_RELEASE_DATE`, `preorder/release_date`).\n* La fecha de lanzamiento se muestra en el talón de pedido anticipado del escaparate y en la variación JSON.\n* Meta oculta del elemento de pedido `_preorder_line` para consultas complementarias."
+
+msgid "* Add `preorder/is_preorder` filter and variation inheritance in `ProductMeta`.\n* Expose per-variation pre-order state on the variations form for add-ons."
+msgstr "* Añade el filtro `preorder/is_preorder` y la herencia de variaciones en `ProductMeta`.\n* Exponer el estado del pedido anticipado por variación en el formulario de variaciones para complementos."
+
+msgid "* Initial release: per-product pre-order flag, custom button text, out-of-stock purchasability, and cart and order flagging, with a settings screen."
+msgstr "* Lanzamiento inicial: indicador de pedido anticipado por producto, texto de botón personalizado, posibilidad de compra de existencias agotadas y marcado de carrito y pedido, con una pantalla de configuración."
+
