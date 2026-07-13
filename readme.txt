@@ -1,4 +1,4 @@
-=== Plogins Preorder - Pre-Orders for WooCommerce ===
+=== Preorder - Pre-Orders for WooCommerce ===
 Contributors: motylanogha
 Tags: woocommerce, preorder, pre-order, backorder, out of stock
 Requires at least: 6.5
