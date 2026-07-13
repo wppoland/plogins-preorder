@@ -137,24 +137,3 @@
 		transition: border-color 0.15s ease, box-shadow 0.15s ease;
 	}
 }
-
-@media (prefers-color-scheme: dark) {
-	.preorder-settings {
-		--preorder-accent: #e8a572;
-		--preorder-fg: #e2e4e7;
-		--preorder-muted: #a7aaad;
-		--preorder-border: #3c434a;
-		--preorder-card: #1e1e1e;
-		--preorder-surface: #2a221c;
-	}
-
-	.preorder-settings .preorder-intro,
-	.preorder-settings .preorder-section {
-		box-shadow: none;
-	}
-
-	/* On dark cards the warm accent is light, so button text must be dark for AA. */
-	.preorder-settings .preorder-preview__btn {
-		color: #2a221c;
-	}
-}
