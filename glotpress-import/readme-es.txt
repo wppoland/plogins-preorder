@@ -4,50 +4,51 @@ Tags: woocommerce, preorder, pre-order, backorder, out of stock
 Requires at least: 6.5
 Tested up to: 7.0
 Requires PHP: 8.1
-Stable tag: 1.0.1
-Requiere complementos: woocommerce
+Stable tag: 1.0.2
+Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Permita que los clientes realicen pedidos anticipados de productos WooCommerce próximos o agotados con un botón personalizado para añadir al carrito.
+Permite que tus clientes reserven productos de WooCommerce próximos o agotados con un botón personalizado para añadir al carrito.
 
 == Description ==
 
-El pedido anticipado le permite vender productos WooCommerce antes de que estén disponibles. Marque una casilla
-en el producto y permanece adquirible incluso cuando su estado de existencias está agotado
-stock, por lo que un cliente puede reservar un próximo lanzamiento o un reabastecimiento en lugar de
-aterrizando en una página muerta de "agotado".
+Plogins Preorder te permite vender productos de WooCommerce antes de que estén en stock. Marca una casilla
+en el producto y seguirá disponible para la compra incluso cuando su estado de stock sea agotado,
+de modo que un cliente pueda reservar un próximo lanzamiento o una reposición en lugar de
+aterrizar en una página muerta de «agotado».
 
-En el escaparate, los productos pedidos por adelantado obtienen una etiqueta personalizada para añadir al carrito (por ejemplo
-"Reservar ahora"), y cada línea de pedido anticipado se marca en el carrito y se copia en
-el pedido, para que pueda diferenciar los pedidos anticipados al empacar y enviar.
+En la tienda, los productos en preventa reciben una etiqueta personalizada para el botón de añadir al carrito (por ejemplo
+«Reservar ahora»), y cada línea de preventa se marca en el carrito y se copia en
+el pedido, para que puedas distinguir las preventas al empaquetar y enviar.
 
 = Documentation and links =
 
 * <strong>Documentación</strong> - https://plogins.com/es/plogins-preorder/docs/
-* <strong>Página de complementos</strong> - https://plogins.com/es/plogins-preorder/
+* <strong>Página del plugin</strong> - https://plogins.com/es/plogins-preorder/
 * <strong>Código fuente</strong> - https://github.com/wppoland/plogins-preorder
 * <strong>Informes de errores y solicitudes de funciones</strong> - https://github.com/wppoland/plogins-preorder/issues
 
 
 = Features =
 
-* Una casilla de verificación <strong>Pre-pedido</strong> en cada producto, en <strong>Datos del producto → General</strong>.
-* Una etiqueta personalizada para añadir al carrito para productos en preventa, configurada en toda la tienda.
-* Los productos reservados se pueden comprar mientras su estado de existencias esté agotado.
-* El carrito y el proceso de pago muestran una fila "Pedido anticipado: Sí" en cada línea de pedido anticipado.
-* Esa bandera se copia en la línea de pedido del pedido, por lo que se muestra en la pantalla del pedido y en los albaranes.
-* Una pantalla <strong>WooCommerce → Pedidos anticipados</strong> con un interruptor de encendido/apagado para toda la tienda y el texto del botón predeterminado.
-* Al pausar el interruptor de encendido/apagado, los productos marcados se comportan nuevamente como productos normales, sin editar cada uno.
-* Los formularios no están verificados y están limitados a usuarios que pueden administrar WooCommerce; la salida se escapa y la entrada se desinfecta.
-* Se envía con una plantilla de traducción (plogins-preorder.pot) y una traducción al polaco; Al eliminar el complemento se elimina tu configuración.
+* Una casilla <strong>Preventa</strong> en cada producto, en <strong>Datos del producto → General</strong>.
+* Una etiqueta personalizada para el botón de añadir al carrito de los productos en preventa, configurada para toda la tienda.
+* Los productos en preventa siguen disponibles para la compra mientras su estado de stock sea agotado.
+* El carrito y el pago muestran una fila «Preventa: Sí» en cada línea de preventa.
+* Esa marca se copia en la línea del pedido, así que aparece en la pantalla del pedido y en los albaranes.
+* Una pantalla <strong>WooCommerce → Preventas</strong> con un interruptor de encendido/apagado para toda la tienda y el texto de botón por defecto.
+* Al desactivar el interruptor, los productos marcados vuelven a comportarse como productos normales, sin editar cada uno.
+* Los formularios están verificados con nonce y limitados a usuarios que pueden gestionar WooCommerce; la salida se escapa y la entrada se sanea.
+* Se distribuye con una plantilla de traducción (plogins-preorder.pot) y una traducción al polaco; al eliminar el plugin se borra su ajuste.
 * Funciona con WooCommerce HPOS y los bloques de carrito y pago.
 
 == Installation ==
 
-1. Cargue el complemento en `/wp-content/plugins/preorder`, o instálelo a través de Complementos → Añadir nuevo.
+1. Sube el plugin a `/wp-content/plugins/preorder`, o instálalo desde Plugins → Añadir nuevo.
 2. Actívalo. WooCommerce debe estar activo.
-3. Edite un producto, abra <strong>Datos del producto → General</strong> y marque <strong>Reservar<strong>. 4. Ajuste los valores predeterminados de toda la tienda en </strong>WooCommerce → Pedidos anticipados</strong>.
+3. Edita un producto, abre <strong>Datos del producto → General</strong> y marca <strong>Preventa</strong>.
+4. Ajusta los valores por defecto de toda la tienda en <strong>WooCommerce → Preventas</strong>.
 
 == Frequently Asked Questions ==
 
@@ -57,58 +58,65 @@ Sí. WooCommerce debe estar instalado y activo.
 
 = What happens when a product is marked as a pre-order? =
 
-Se puede comprar incluso cuando está agotado, su etiqueta del botón Añadir al carrito
-cambios, y el carrito y las líneas de pedido se marcan como pedidos anticipados.
+Pasa a estar disponible para la compra incluso cuando está agotado, la etiqueta de su botón de añadir al carrito
+cambia, y las líneas del carrito y del pedido se marcan como preventas.
 
 = Can I pause pre-orders without editing every product? =
 
-Sí. Desactive la opción global en <strong>WooCommerce → Pedidos anticipados</strong> y marque
-Los productos se comportan como productos normales hasta que los vuelves a encender.
+Sí. Desactiva el interruptor global en <strong>WooCommerce → Preventas</strong> y los productos
+marcados se comportan como productos normales hasta que lo vuelvas a activar.
 
 = Can guests buy pre-order products? =
 
-Sí, cuando el producto se puede comprar y su tienda permite el pago como invitado.
+Sí, cuando el producto se puede comprar y tu tienda permite el pago como invitado.
 
 = How are pre-orders shown in the cart? =
 
-Los artículos del carrito y de las líneas de pedido se marcan para que tú y el cliente puedan ver qué líneas son pedidos anticipados.
+Los artículos del carrito y las líneas del pedido se marcan para que tú y el cliente veáis qué líneas son preventas.
 
 
 = Does this plugin work on WordPress Multisite? =
 
-Sí. Este complemento es compatible con WordPress Multisite. Activarlo en red o activarlo en sitios individuales; Cada sitio mantiene su propia configuración y datos.
+Sí. Este plugin es compatible con WordPress Multisite. Actívalo en toda la red o en sitios individuales; cada sitio conserva sus propios ajustes y datos.
 
 == Screenshots ==
 
-1. El campo de pedido anticipado en el editor de productos de WooCommerce.
-2. La pantalla de configuración de pedidos anticipados de WooCommerce →.
+1. El campo de preventa en el editor de productos de WooCommerce.
+2. La pantalla de ajustes WooCommerce → Preventas.
 
 == External Services ==
 
-El pedido anticipado no se conecta a ningún servicio externo. No hace HTTP saliente
-solicita, no carga scripts, fuentes o análisis remotos y no envía datos
-tu sitio. Todo se ejecuta en tu propia instalación de WordPress: el botón para toda la tienda
-El texto y el interruptor de encendido/apagado se encuentran en la opción `preorder_settings`, el valor por producto
-El indicador se almacena como el meta del producto `_preorder_enabled`, y cada pedido anticipado
-La línea lleva un metavalor de línea de pedido "Pre-pedido: Sí". No se envía ningún correo electrónico por parte del
-complemento.
+Plogins Preorder no se conecta a ningún servicio externo. No hace peticiones HTTP salientes,
+no carga scripts, fuentes ni analíticas remotas y no envía ningún dato fuera de
+tu sitio. Todo se ejecuta en tu propia instalación de WordPress: el texto del botón para toda la tienda
+y el interruptor de encendido/apagado residen en la opción `preorder_settings`, la marca por producto
+se guarda como el meta de producto `_preorder_enabled`, y cada línea de pedido en preventa
+lleva un valor meta de línea «Preventa: Sí». El plugin no envía ningún
+correo electrónico.
+
+== Translations ==
+
+Plogins Preorder incluye traducciones al polaco, alemán y español de la interfaz del plugin. El dominio de texto es `plogins-preorder`, de modo que los paquetes de idioma de WordPress.org también pueden sobrescribir o ampliar estas traducciones incluidas.
 
 == Changelog ==
+
+= 1.0.2 =
+* Añadidas traducciones al polaco, alemán y español de la interfaz del plugin.
 
 = 1.0.1 =
 * Primera versión estable.
 
 = 0.1.3 =
-* Renombrado a Plogins Preorder para WooCommerce para obtener un nombre de complemento más distintivo.
+* Renombrado a Plogins Preorder for WooCommerce para tener un nombre de plugin más distintivo.
 
 = 0.1.2 =
-* Campo de fecha de lanzamiento esperada en productos (filtro `ProductMeta::META_RELEASE_DATE`, `preorder/release_date`).
-* La fecha de lanzamiento se muestra en el talón de pedido anticipado del escaparate y en la variación JSON.
-* Meta oculta del elemento de pedido `_preorder_line` para consultas complementarias.
+* Campo de fecha de lanzamiento prevista en los productos (`ProductMeta::META_RELEASE_DATE`, filtro `preorder/release_date`).
+* Fecha de lanzamiento mostrada en el resumen de preventa de la tienda y en el JSON de variaciones.
+* Meta oculto de línea de pedido `_preorder_line` para consultas de complementos.
 
 = 0.1.1 =
-* Añade el filtro `preorder/is_preorder` y la herencia de variaciones en `ProductMeta`.
-* Exponer el estado del pedido anticipado por variación en el formulario de variaciones para complementos.
+* Añadido el filtro `preorder/is_preorder` y la herencia de variaciones en `ProductMeta`.
+* Expuesto el estado de preventa por variación en el formulario de variaciones para complementos.
 
 = 0.1.0 =
-* Lanzamiento inicial: indicador de pedido anticipado por producto, texto de botón personalizado, posibilidad de compra de existencias agotadas y marcado de carrito y pedido, con una pantalla de configuración.
+* Lanzamiento inicial: marca de preventa por producto, texto de botón personalizado, posibilidad de compra con stock agotado y marcado de carrito y pedido, con una pantalla de ajustes.
