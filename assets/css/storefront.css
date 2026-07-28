@@ -1,9 +1,9 @@
 /**
- * Preorder — storefront.
+ * Preorder, storefront.
  *
  * One surface, one moment: the single-product page, where a shopper commits to
  * reserving an item that has not arrived yet. The component reads as a paper
- * reservation stub — a claim ticket with a real perforated tear-edge — so the
+ * reservation stub, a claim ticket with a real perforated tear-edge, so the
  * promise ("this is coming, you're holding a place in line") is legible at a
  * glance instead of hidden inside a relabeled button.
  *
@@ -27,7 +27,7 @@
 	--preorder-hole: var(--preorder-hole-color, #ece1d0);
 	--preorder-hole-edge: var(--preorder-hole-edge-color, #d8c6ad);
 
-	/* The perforated gutter width — also where the punch animation lives. */
+	/* The perforated gutter width, also where the punch animation lives. */
 	--preorder-perf: 22px;
 
 	position: relative;
@@ -92,7 +92,7 @@
 	color: var(--preorder-ink-strong);
 }
 
-/* The ticket eyelet beside the title — reads as a hole-punch on the stub. */
+/* The ticket eyelet beside the title, reads as a hole-punch on the stub. */
 .preorder-stub__eyelet {
 	width: 0.62em;
 	height: 0.62em;

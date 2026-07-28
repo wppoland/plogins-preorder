@@ -15,7 +15,7 @@ Pozwól klientom zamawiać w przedsprzedaży nadchodzące lub niedostępne produ
 
 Plogins Preorder pozwala sprzedawać produkty WooCommerce, zanim trafią do magazynu. Zaznacz pole
 przy produkcie, a pozostanie on dostępny do kupienia nawet wtedy, gdy jego stan magazynowy to brak
-na stanie — dzięki temu klient może zarezerwować nadchodzącą premierę lub uzupełnienie zapasów, zamiast
+na stanie, dzięki temu klient może zarezerwować nadchodzącą premierę lub uzupełnienie zapasów, zamiast
 trafiać na martwą stronę „brak na stanie”.
 
 W sklepie produkty w przedsprzedaży otrzymują niestandardową etykietę przycisku dodawania do koszyka (np.

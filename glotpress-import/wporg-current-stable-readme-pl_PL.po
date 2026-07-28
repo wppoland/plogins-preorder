@@ -26,7 +26,7 @@ msgid ""
 msgstr ""
 "Plogins Preorder pozwala sprzedawać produkty WooCommerce, zanim trafią do magazynu. Zaznacz pole\n"
 "przy produkcie, a pozostanie on dostępny do kupienia nawet wtedy, gdy jego stan magazynowy to brak\n"
-"na stanie — dzięki temu klient może zarezerwować nadchodzącą premierę lub uzupełnienie zapasów, zamiast\n"
+"na stanie, dzięki temu klient może zarezerwować nadchodzącą premierę lub uzupełnienie zapasów, zamiast\n"
 "trafiać na martwą stronę „brak na stanie”."
 
 msgid ""

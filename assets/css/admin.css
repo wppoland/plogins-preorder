@@ -1,5 +1,5 @@
 /**
- * Preorder — settings screen styling.
+ * Preorder, settings screen styling.
  *
  * Native wp-admin feel, raised a notch: real section cards, a family accent that
  * matches the storefront (warm terracotta), and a live label preview. Scoped to
@@ -12,7 +12,7 @@
  *            vs #f0f0f1   6.31:1  (AA text on the wp-admin body)
  *   dark   #e8a572 (storefront dark accent)
  *            vs #1e1e1e   7.98:1  (AA/AAA text)
- *   Used for headings, the section rule and focus ring (UI, needs 3:1) — all pass.
+ *   Used for headings, the section rule and focus ring (UI, needs 3:1), all pass.
  */
 
 .preorder-settings {
@@ -139,7 +139,7 @@
 }
 
 /* ------------------------------------------------------------------ *
- * PRO upsell — dismissible banner, sidebar promo, "what PRO adds"
+ * PRO upsell, dismissible banner, sidebar promo, "what PRO adds"
  * locked cards. Coming-soon variant: soft CTA, no price, no buy button.
  * Pure advertising (no disabled inputs), scoped to .preorder-settings.
  *
