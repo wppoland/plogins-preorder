@@ -1,9 +1,9 @@
 /**
- * Preorder — storefront micro-interaction.
+ * Preorder, storefront micro-interaction.
  *
  * The reservation stub "validates" with a single punch: once when it first
  * appears, and again when the shopper presses the pre-order button (the moment
- * of commitment). Presentation only — it never touches cart behaviour, which
+ * of commitment). Presentation only, it never touches cart behaviour, which
  * is handled server-side by PreorderService.
  *
  * Vanilla JS, no dependencies. Respects prefers-reduced-motion (the CSS keyframe
