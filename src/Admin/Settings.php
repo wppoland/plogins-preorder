@@ -91,7 +91,7 @@ final class Settings implements HasHooks
         );
 
         // Tiny vanilla mirror so merchants see the storefront button label as they
-        // type. No framework, no jQuery — registered on its own handle, deferred.
+        // type. No framework, no jQuery, registered on its own handle, deferred.
         wp_register_script('preorder-admin', '', [], \Preorder\VERSION, true);
         wp_enqueue_script('preorder-admin');
 

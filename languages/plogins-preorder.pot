@@ -26,7 +26,9 @@ msgstr ""
 
 #. Description of the plugin
 #: preorder.php
-msgid "Let customers pre-order upcoming or out-of-stock WooCommerce products with a custom add-to-cart button."
+msgid ""
+"Let customers pre-order upcoming or out-of-stock WooCommerce products with a "
+"custom add-to-cart button."
 msgstr ""
 
 #. Author of the plugin
@@ -40,21 +42,22 @@ msgid "https://plogins.com/"
 msgstr ""
 
 #: preorder.php:47
-msgid "Preorder - Pre-Orders for WooCommerce requires WooCommerce to be active."
+msgid ""
+"Preorder - Pre-Orders for WooCommerce requires WooCommerce to be active."
 msgstr ""
 
-#: src/Admin/ProductDataPanel.php:32
-#: src/Service/PreorderService.php:212
+#: src/Admin/ProductDataPanel.php:32 src/Service/PreorderService.php:212
 #: src/Service/PreorderService.php:234
 msgid "Pre-order"
 msgstr ""
 
 #: src/Admin/ProductDataPanel.php:33
-msgid "Sell this product as a pre-order. It stays purchasable even when out of stock."
+msgid ""
+"Sell this product as a pre-order. It stays purchasable even when out of "
+"stock."
 msgstr ""
 
-#: src/Admin/Settings.php:45
-#: src/Admin/Settings.php:46
+#: src/Admin/Settings.php:45 src/Admin/Settings.php:46
 #: src/Admin/Settings.php:119
 msgid "Pre-orders"
 msgstr ""
@@ -68,7 +71,10 @@ msgid "Settings saved."
 msgstr ""
 
 #: src/Admin/Settings.php:128
-msgid "Flag any product as a pre-order from the product editor (Product data → General). The options here set the store-wide defaults that those products inherit."
+msgid ""
+"Flag any product as a pre-order from the product editor (Product data → "
+"General). The options here set the store-wide defaults that those products "
+"inherit."
 msgstr ""
 
 #: src/Admin/Settings.php:136
@@ -88,7 +94,10 @@ msgid "Apply pre-order behaviour on the storefront."
 msgstr ""
 
 #: src/Admin/Settings.php:160
-msgid "Lets flagged products stay purchasable while out of stock and shows the pre-order button. Turn this off to pause every pre-order store-wide in one click, without un-flagging each product. Default: on."
+msgid ""
+"Lets flagged products stay purchasable while out of stock and shows the pre-"
+"order button. Turn this off to pause every pre-order store-wide in one "
+"click, without un-flagging each product. Default: on."
 msgstr ""
 
 #: src/Admin/Settings.php:169
@@ -110,7 +119,9 @@ msgstr ""
 #. translators: %s: default button label, e.g. "Pre-order now".
 #: src/Admin/Settings.php:198
 #, php-format
-msgid "Replaces the add-to-cart label on pre-order products. Leave blank to use %s. Any single product can override this from its own editor."
+msgid ""
+"Replaces the add-to-cart label on pre-order products. Leave blank to use %s. "
+"Any single product can override this from its own editor."
 msgstr ""
 
 #: src/Admin/Settings.php:209
@@ -126,14 +137,74 @@ msgid "Reserved as a pre-order"
 msgstr ""
 
 #: src/Service/PreorderService.php:164
-msgid "Not in stock yet, your order holds a place in line and ships when it arrives."
+msgid ""
+"Not in stock yet, your order holds a place in line and ships when it arrives."
 msgstr ""
 
-#: src/Service/PreorderService.php:213
-#: src/Service/PreorderService.php:234
+#: src/Service/PreorderService.php:213 src/Service/PreorderService.php:234
 msgid "Yes"
 msgstr ""
 
 #: src/Settings.php:50
 msgid "Pre-order now"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:78
+msgid "Wkrótce"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:78
+msgid "Coming soon"
+msgstr ""
+
+#. translators: %d: yearly price in PLN
+#: src/Admin/ProUpsell.php:83
+#, php-format
+msgid "od %d zł/rok"
+msgstr ""
+
+#. translators: 1: currency symbol, 2: yearly price
+#: src/Admin/ProUpsell.php:88
+#, php-format
+msgid "from %1$s%2$d/yr"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:97
+msgid "Upgrade to PRO"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:98
+msgid "Powiadom mnie"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:98
+msgid "Get notified"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:128
+msgid "Permission denied."
+msgstr ""
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:158
+#, php-format
+msgid "Do more with %s"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:165
+msgid "Dismiss this notice"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:182
+msgid "Unlock every PRO feature"
+msgstr ""
+
+#: src/Admin/ProUpsell.php:195
+msgid "one licence, every PRO feature"
+msgstr ""
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:214
+#, php-format
+msgid "What %s adds"
 msgstr ""
