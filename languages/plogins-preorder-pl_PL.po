@@ -6,16 +6,16 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/preorder\n"
 "POT-Creation-Date: 2026-06-16T20:23:51+00:00\n"
 "PO-Revision-Date: 2026-06-15 00:00+0000\n"
-"Last-Translator: WPPoland <kontakt@wppoland.com>\n"
+"Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "Language: pl_PL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: WP-CLI 2.12.0\n"
-"X-Domain: plogins-preorder\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
 "|| n%100>14) ? 1 : 2);\n"
+"X-Domain: plogins-preorder\n"
+"X-Generator: WP-CLI 2.12.0\n"
 
 #. Plugin Name of the plugin
 #: preorder.php
@@ -84,14 +84,19 @@ msgid ""
 "General). The options here set the store-wide defaults that those products "
 "inherit."
 msgstr ""
+"Oznacz dowolny produkt jako zamówienie w przedsprzedaży w edytorze produktów "
+"(Dane produktu → Ogólne). Opcje tutaj ustawiają domyślne ustawienia całego "
+"sklepu, które dziedziczą te produkty."
 
 #: src/Admin/Settings.php:136
 msgid "Storefront behaviour"
-msgstr ""
+msgstr "Zachowanie w sklepie"
 
 #: src/Admin/Settings.php:138
 msgid "Controls whether the pre-order rules run on your live store."
 msgstr ""
+"Kontroluje, czy reguły zamówień w przedsprzedaży działają w Twoim aktywnym "
+"sklepie."
 
 #: src/Admin/Settings.php:145
 msgid "Enable pre-orders"
@@ -104,17 +109,22 @@ msgstr "Stosuj zachowanie przedsprzedaży w sklepie."
 #: src/Admin/Settings.php:160
 msgid ""
 "Lets flagged products stay purchasable while out of stock and shows the pre-"
-"order button. Turn this off to pause every pre-order store-wide in one click "
-", without un-flagging each product. Default: on."
+"order button. Turn this off to pause every pre-order store-wide in one "
+"click, without un-flagging each product. Default: on."
 msgstr ""
+"Umożliwia zakup oznaczonych produktów, gdy są one niedostępne, i wyświetla "
+"przycisk zamówienia w przedsprzedaży. Wyłącz tę opcję, aby jednym "
+"kliknięciem wstrzymać każde zamówienie w przedsprzedaży w całym sklepie, bez "
+"usuwania oznaczenia każdego produktu. Domyślnie: włączone."
 
 #: src/Admin/Settings.php:169
 msgid "Pre-order button"
-msgstr ""
+msgstr "Przycisk zamówienia w przedsprzedaży"
 
 #: src/Admin/Settings.php:171
 msgid "The label shoppers see in place of the usual add-to-cart text."
 msgstr ""
+"Etykieta, którą kupujący widzą zamiast zwykłego tekstu dodawanego do koszyka."
 
 #: src/Admin/Settings.php:178
 msgid "Default button text"
@@ -122,7 +132,7 @@ msgstr "Domyślny tekst przycisku"
 
 #: src/Admin/Settings.php:191
 msgid "Shoppers see:"
-msgstr ""
+msgstr "Kupujący widzą:"
 
 #. translators: %s: default button label, e.g. "Pre-order now".
 #: src/Admin/Settings.php:198
@@ -131,6 +141,9 @@ msgid ""
 "Replaces the add-to-cart label on pre-order products. Leave blank to use %s. "
 "Any single product can override this from its own editor."
 msgstr ""
+"Zastępuje etykietę „dodaj do koszyka” na produktach zamówionych w "
+"przedsprzedaży. Pozostaw puste, aby użyć %s. Każdy pojedynczy produkt może "
+"zastąpić to ustawienie w swoim własnym edytorze."
 
 #: src/Admin/Settings.php:209
 msgid "Save changes"
@@ -142,13 +155,14 @@ msgstr "Nie masz uprawnień do zarządzania tymi ustawieniami."
 
 #: src/Service/PreorderService.php:163
 msgid "Reserved as a pre-order"
-msgstr ""
+msgstr "Zarezerwowane jako zamówienie w przedsprzedaży"
 
 #: src/Service/PreorderService.php:164
 msgid ""
-"Not in stock yet, your order holds a place in line and ships when it "
-"arrives."
+"Not in stock yet, your order holds a place in line and ships when it arrives."
 msgstr ""
+"Jeszcze niedostępne. Twoje zamówienie czeka w kolejce i zostanie wysłane, "
+"gdy dotrze."
 
 #: src/Service/PreorderService.php:213 src/Service/PreorderService.php:234
 msgid "Yes"
@@ -157,6 +171,66 @@ msgstr "Tak"
 #: src/Settings.php:50
 msgid "Pre-order now"
 msgstr "Zamów w przedsprzedaży"
+
+#: src/Admin/ProUpsell.php:78
+msgid "Wkrótce"
+msgstr "Wkrótce"
+
+#: src/Admin/ProUpsell.php:78
+msgid "Coming soon"
+msgstr "Wkrótce"
+
+#. translators: %d: yearly price in PLN
+#: src/Admin/ProUpsell.php:83
+#, php-format
+msgid "od %d zł/rok"
+msgstr "od %d zł/rok"
+
+#. translators: 1: currency symbol, 2: yearly price
+#: src/Admin/ProUpsell.php:88
+#, php-format
+msgid "from %1$s%2$d/yr"
+msgstr "od %1$s%2$d/rok"
+
+#: src/Admin/ProUpsell.php:97
+msgid "Upgrade to PRO"
+msgstr "Przejdź na PRO"
+
+#: src/Admin/ProUpsell.php:98
+msgid "Powiadom mnie"
+msgstr "Powiadom mnie"
+
+#: src/Admin/ProUpsell.php:98
+msgid "Get notified"
+msgstr "Powiadom mnie"
+
+#: src/Admin/ProUpsell.php:128
+msgid "Permission denied."
+msgstr "Brak uprawnień."
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:158
+#, php-format
+msgid "Do more with %s"
+msgstr "Zrób więcej dzięki %s"
+
+#: src/Admin/ProUpsell.php:165
+msgid "Dismiss this notice"
+msgstr "Odrzuć to powiadomienie"
+
+#: src/Admin/ProUpsell.php:182
+msgid "Unlock every PRO feature"
+msgstr "Odblokuj wszystkie funkcje PRO"
+
+#: src/Admin/ProUpsell.php:195
+msgid "one licence, every PRO feature"
+msgstr "jedna licencja, wszystkie funkcje PRO"
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:214
+#, php-format
+msgid "What %s adds"
+msgstr "Co dodaje %s"
 
 #~ msgid ""
 #~ "Mark individual products as pre-orders from the product editor (Product "
