@@ -29,8 +29,8 @@ msgstr "https://plogins.com/de/preorder/"
 #. Description of the plugin
 #: preorder.php
 msgid ""
-"Let customers pre-order upcoming or out-of-stock WooCommerce products with a"
-" custom add-to-cart button."
+"Let customers pre-order upcoming or out-of-stock WooCommerce products with a "
+"custom add-to-cart button."
 msgstr ""
 "Ermögliche Kunden, bevorstehende oder nicht mehr vorrätige WooCommerce-"
 "Produkte mit einer benutzerdefinierten Schaltfläche zum Hinzufügen zum "
@@ -138,12 +138,12 @@ msgstr "Käufer sehen:"
 #: src/Admin/Settings.php:198
 #, php-format
 msgid ""
-"Replaces the add-to-cart label on pre-order products. Leave blank to use %s."
-" Any single product can override this from its own editor."
+"Replaces the add-to-cart label on pre-order products. Leave blank to use %s. "
+"Any single product can override this from its own editor."
 msgstr ""
 "Ersetzt das Add-to-Cart-Etikett bei vorbestellten Produkten. Lass das Feld "
-"leer, um %s zu verwenden. Jedes einzelne Produkt kann dies in seinem eigenen"
-" Editor überschreiben."
+"leer, um %s zu verwenden. Jedes einzelne Produkt kann dies in seinem eigenen "
+"Editor überschreiben."
 
 #: src/Admin/Settings.php:209
 msgid "Save changes"
@@ -159,8 +159,7 @@ msgstr "Als Vorbestellung reserviert"
 
 #: src/Service/PreorderService.php:164
 msgid ""
-"Not in stock yet, your order holds a place in line and ships when it "
-"arrives."
+"Not in stock yet, your order holds a place in line and ships when it arrives."
 msgstr ""
 "Noch nicht auf Lager, deine Bestellung bleibt in der Warteschlange und wird "
 "versendet, sobald sie eintrifft."
@@ -172,3 +171,63 @@ msgstr "Ja"
 #: src/Settings.php:50
 msgid "Pre-order now"
 msgstr "jetzt vorbestellen"
+
+#: src/Admin/ProUpsell.php:78
+msgid "Wkrótce"
+msgstr "Demnächst"
+
+#: src/Admin/ProUpsell.php:78
+msgid "Coming soon"
+msgstr "Demnächst"
+
+#. translators: %d: yearly price in PLN
+#: src/Admin/ProUpsell.php:83
+#, php-format
+msgid "od %d zł/rok"
+msgstr "ab %d zł/Jahr"
+
+#. translators: 1: currency symbol, 2: yearly price
+#: src/Admin/ProUpsell.php:88
+#, php-format
+msgid "from %1$s%2$d/yr"
+msgstr "ab %1$s%2$d/Jahr"
+
+#: src/Admin/ProUpsell.php:97
+msgid "Upgrade to PRO"
+msgstr "Auf PRO upgraden"
+
+#: src/Admin/ProUpsell.php:98
+msgid "Powiadom mnie"
+msgstr "Benachrichtige mich"
+
+#: src/Admin/ProUpsell.php:98
+msgid "Get notified"
+msgstr "Benachrichtige mich"
+
+#: src/Admin/ProUpsell.php:128
+msgid "Permission denied."
+msgstr "Zugriff verweigert."
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:158
+#, php-format
+msgid "Do more with %s"
+msgstr "Mehr erreichen mit %s"
+
+#: src/Admin/ProUpsell.php:165
+msgid "Dismiss this notice"
+msgstr "Diesen Hinweis ausblenden"
+
+#: src/Admin/ProUpsell.php:182
+msgid "Unlock every PRO feature"
+msgstr "Alle PRO-Funktionen freischalten"
+
+#: src/Admin/ProUpsell.php:195
+msgid "one licence, every PRO feature"
+msgstr "eine Lizenz, alle PRO-Funktionen"
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:214
+#, php-format
+msgid "What %s adds"
+msgstr "Was %s ergänzt"

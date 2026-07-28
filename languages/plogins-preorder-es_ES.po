@@ -29,8 +29,8 @@ msgstr "https://plogins.com/es/preorder/"
 #. Description of the plugin
 #: preorder.php
 msgid ""
-"Let customers pre-order upcoming or out-of-stock WooCommerce products with a"
-" custom add-to-cart button."
+"Let customers pre-order upcoming or out-of-stock WooCommerce products with a "
+"custom add-to-cart button."
 msgstr ""
 "Permita que los clientes realicen pedidos anticipados de productos "
 "WooCommerce próximos o agotados con un botón personalizado para añadir al "
@@ -85,8 +85,8 @@ msgid ""
 "General). The options here set the store-wide defaults that those products "
 "inherit."
 msgstr ""
-"Marca cualquier producto como pedido anticipado desde el editor de productos"
-" (Datos del producto → General). Las opciones aquí establecen los valores "
+"Marca cualquier producto como pedido anticipado desde el editor de productos "
+"(Datos del producto → General). Las opciones aquí establecen los valores "
 "predeterminados en toda la tienda que heredan esos productos."
 
 #: src/Admin/Settings.php:136
@@ -125,8 +125,8 @@ msgstr "Botón de reserva"
 #: src/Admin/Settings.php:171
 msgid "The label shoppers see in place of the usual add-to-cart text."
 msgstr ""
-"La etiqueta que los compradores ven en lugar del texto habitual de añadir al"
-" carrito."
+"La etiqueta que los compradores ven en lugar del texto habitual de añadir al "
+"carrito."
 
 #: src/Admin/Settings.php:178
 msgid "Default button text"
@@ -140,12 +140,12 @@ msgstr "Los compradores ven:"
 #: src/Admin/Settings.php:198
 #, php-format
 msgid ""
-"Replaces the add-to-cart label on pre-order products. Leave blank to use %s."
-" Any single product can override this from its own editor."
+"Replaces the add-to-cart label on pre-order products. Leave blank to use %s. "
+"Any single product can override this from its own editor."
 msgstr ""
 "Reemplaza la etiqueta de añadir al carrito en productos reservados. Déjelo "
-"en blanco para usar %s. Cualquier producto puede anular esto desde su propio"
-" editor."
+"en blanco para usar %s. Cualquier producto puede anular esto desde su propio "
+"editor."
 
 #: src/Admin/Settings.php:209
 msgid "Save changes"
@@ -161,8 +161,7 @@ msgstr "Reservado como reserva"
 
 #: src/Service/PreorderService.php:164
 msgid ""
-"Not in stock yet, your order holds a place in line and ships when it "
-"arrives."
+"Not in stock yet, your order holds a place in line and ships when it arrives."
 msgstr ""
 "Aún no está en stock, su pedido mantiene un lugar en la fila y se envía "
 "cuando llega."
@@ -174,3 +173,63 @@ msgstr "Sí"
 #: src/Settings.php:50
 msgid "Pre-order now"
 msgstr "Reserva ahora"
+
+#: src/Admin/ProUpsell.php:78
+msgid "Wkrótce"
+msgstr "Próximamente"
+
+#: src/Admin/ProUpsell.php:78
+msgid "Coming soon"
+msgstr "Próximamente"
+
+#. translators: %d: yearly price in PLN
+#: src/Admin/ProUpsell.php:83
+#, php-format
+msgid "od %d zł/rok"
+msgstr "desde %d zł/año"
+
+#. translators: 1: currency symbol, 2: yearly price
+#: src/Admin/ProUpsell.php:88
+#, php-format
+msgid "from %1$s%2$d/yr"
+msgstr "desde %1$s%2$d/año"
+
+#: src/Admin/ProUpsell.php:97
+msgid "Upgrade to PRO"
+msgstr "Mejora a PRO"
+
+#: src/Admin/ProUpsell.php:98
+msgid "Powiadom mnie"
+msgstr "Avísame"
+
+#: src/Admin/ProUpsell.php:98
+msgid "Get notified"
+msgstr "Avísame"
+
+#: src/Admin/ProUpsell.php:128
+msgid "Permission denied."
+msgstr "Permiso denegado."
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:158
+#, php-format
+msgid "Do more with %s"
+msgstr "Haz más con %s"
+
+#: src/Admin/ProUpsell.php:165
+msgid "Dismiss this notice"
+msgstr "Descartar este aviso"
+
+#: src/Admin/ProUpsell.php:182
+msgid "Unlock every PRO feature"
+msgstr "Desbloquea todas las funciones PRO"
+
+#: src/Admin/ProUpsell.php:195
+msgid "one licence, every PRO feature"
+msgstr "una licencia, todas las funciones PRO"
+
+#. translators: %s: PRO edition name
+#: src/Admin/ProUpsell.php:214
+#, php-format
+msgid "What %s adds"
+msgstr "Lo que añade %s"
