@@ -222,7 +222,7 @@
 }
 
 /* ------------------------------------------------------------------ *
- * PRO upsell — dismissible banner, sidebar promo, "what PRO adds"
+ * PRO upsell, dismissible banner, sidebar promo, "what PRO adds"
  * locked cards. Pure advertising (no disabled inputs), scoped to
  * .preorder-settings, using the plugin's own terracotta accent.
  * The CTA buttons use a fixed dark --preorder-pro-cta (#8a4419) so
