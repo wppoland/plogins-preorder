@@ -205,7 +205,7 @@ final class Settings implements HasHooks
                                         <?php
                                         printf(
                                             /* translators: %s: default button label, e.g. "Pre-order now". */
-                                            esc_html__('Replaces the add-to-cart label on pre-order products. Leave blank to use %s. Any single product can override this from its own editor.', 'plogins-preorder'),
+                                            esc_html__('Replaces the add-to-cart label on pre-order products across the store. Leave blank to use %s.', 'plogins-preorder'),
                                             '<code>' . esc_html($defaultButton) . '</code>',
                                         );
                                         ?>
