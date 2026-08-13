@@ -30,12 +30,12 @@ return [
             'pl' => ['title' => 'Zaliczka przy kasie', 'desc' => 'Konfigurowalny procent zaliczki pobierany od linii przedsprzedaży; reszta do zapłaty przy premierze (wdrożone).'],
         ],
         [
-            'en' => ['title' => 'Per-variation pre-orders', 'desc' => 'Mark individual variations as pre-orders with optional per-variation release dates (PerVariationPreorder, shipped).'],
-            'pl' => ['title' => 'Przedsprzedaż per wariant', 'desc' => 'Oznacz poszczególne warianty jako przedsprzedaż z opcjonalną datą premiery (PerVariationPreorder, wdrożone).'],
+            'en' => ['title' => 'Per-variation pre-orders', 'desc' => 'Mark individual variations as pre-orders with optional per-variation release dates (shipped).'],
+            'pl' => ['title' => 'Przedsprzedaż per wariant', 'desc' => 'Oznacz poszczególne warianty jako przedsprzedaż z opcjonalną datą premiery (wdrożone).'],
         ],
         [
-            'en' => ['title' => 'Release emails', 'desc' => 'Automatic customer notifications on the product release date (ReleaseEmails, shipped).'],
-            'pl' => ['title' => 'E-maile o premierze', 'desc' => 'Automatyczne powiadomienia klientów w dniu premiery produktu (ReleaseEmails, wdrożone).'],
+            'en' => ['title' => 'Release emails', 'desc' => 'Automatic customer notifications on the product release date (shipped).'],
+            'pl' => ['title' => 'E-maile o premierze', 'desc' => 'Automatyczne powiadomienia klientów w dniu premiery produktu (wdrożone).'],
         ],
         [
             'en' => ['title' => 'Discount and deposit settings', 'desc' => 'Enable each feature and set percentages under WooCommerce → Pre-order Discount and Pre-order Deposit.'],
