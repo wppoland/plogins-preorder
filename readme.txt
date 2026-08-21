@@ -24,10 +24,10 @@ the order, so you can tell pre-orders apart when you pack and ship.
 
 = Documentation and links =
 
-* **Documentation** - https://plogins.com/plogins-preorder/docs/
-* **Plugin page** - https://plogins.com/plogins-preorder/
-* **Source code** - https://github.com/wppoland/plogins-preorder
-* **Bug reports and feature requests** - https://github.com/wppoland/plogins-preorder/issues
+* **Documentation**: [plogins.com/plogins-preorder/docs/](https://plogins.com/plogins-preorder/docs/)
+* **Plugin page**: [plogins.com/plogins-preorder/](https://plogins.com/plogins-preorder/)
+* **Source code**: [github.com/wppoland/plogins-preorder](https://github.com/wppoland/plogins-preorder)
+* **Bug reports and feature requests**: [github.com/wppoland/plogins-preorder/issues](https://github.com/wppoland/plogins-preorder/issues)
 
 
 = Features =
