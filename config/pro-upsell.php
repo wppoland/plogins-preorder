@@ -15,7 +15,6 @@ return [
     'sellable'   => true,
     'price_from' => 29,
     'currency'   => 'EUR',
-    'price_pln'  => 129,
     'lead'       => [
         'en' => 'The incentive discount, checkout deposit, per-variation pre-orders and release emails ship in version 0.4.0.',
         'pl' => 'Rabat, zaliczka, przedsprzedaż per wariant i e-maile o premierze są wdrożone w wydaniu 0.4.0.',
