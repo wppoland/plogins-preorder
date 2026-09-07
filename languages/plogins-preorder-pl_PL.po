@@ -19,8 +19,8 @@ msgstr ""
 
 #. Plugin Name of the plugin
 #: preorder.php
-msgid "Preorder - Pre-Orders for WooCommerce"
-msgstr "Preorder - Przedsprzedaż dla WooCommerce"
+msgid "Plogins Preorder - Pre-Orders for WooCommerce"
+msgstr "Plogins Preorder - Przedsprzedaż dla WooCommerce"
 
 #. Plugin URI of the plugin
 #: preorder.php
@@ -49,8 +49,9 @@ msgstr "https://plogins.com/"
 
 #: preorder.php:47
 msgid ""
-"Preorder - Pre-Orders for WooCommerce requires WooCommerce to be active."
-msgstr "Preorder - Przedsprzedaż dla WooCommerce wymaga aktywnego WooCommerce."
+"Plogins Preorder - Pre-Orders for WooCommerce requires WooCommerce to be "
+"active."
+msgstr "Plogins Preorder - Przedsprzedaż dla WooCommerce wymaga aktywnego WooCommerce."
 
 #: src/Admin/ProductDataPanel.php:32 src/Service/PreorderService.php:212
 #: src/Service/PreorderService.php:234
