@@ -1,152 +1,64 @@
-# Copyright (C) 2026 WPPoland
+# Copyright (C) 2026 WPPoland.com
 # This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Preorder - Pre-Orders for WooCommerce 0.1.0\n"
+"Project-Id-Version: Plogins Preorder - Pre-Orders for WooCommerce 1.0.8\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/preorder\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-06-16T20:23:51+00:00\n"
+"POT-Creation-Date: 2026-09-07T12:57:54+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: plogins-preorder\n"
 
 #. Plugin Name of the plugin
-#: preorder.php
-msgid "Preorder - Pre-Orders for WooCommerce"
+#: plogins-preorder.php
+msgid "Plogins Preorder - Pre-Orders for WooCommerce"
 msgstr ""
 
 #. Plugin URI of the plugin
-#: preorder.php
-msgid "https://plogins.com/preorder/"
+#: plogins-preorder.php
+msgid "https://plogins.com/plogins-preorder/"
 msgstr ""
 
 #. Description of the plugin
-#: preorder.php
-msgid ""
-"Let customers pre-order upcoming or out-of-stock WooCommerce products with a "
-"custom add-to-cart button."
+#: plogins-preorder.php
+msgid "Let customers pre-order upcoming or out-of-stock WooCommerce products with a custom add-to-cart button."
 msgstr ""
 
 #. Author of the plugin
-#: preorder.php
-msgid "WPPoland"
+#: plogins-preorder.php
+msgid "WPPoland.com"
 msgstr ""
 
 #. Author URI of the plugin
-#: preorder.php
-msgid "https://plogins.com/"
+#: plogins-preorder.php
+msgid "https://wppoland.com"
 msgstr ""
 
-#: preorder.php:47
-msgid ""
-"Preorder - Pre-Orders for WooCommerce requires WooCommerce to be active."
+#: plogins-preorder.php:48
+msgid "Plogins Preorder - Pre-Orders for WooCommerce requires WooCommerce to be active."
 msgstr ""
 
-#: src/Admin/ProductDataPanel.php:32 src/Service/PreorderService.php:212
-#: src/Service/PreorderService.php:234
+#: src/Admin/ProductDataPanel.php:32
+#: src/Service/PreorderService.php:258
+#: src/Service/PreorderService.php:280
 msgid "Pre-order"
 msgstr ""
 
 #: src/Admin/ProductDataPanel.php:33
-msgid ""
-"Sell this product as a pre-order. It stays purchasable even when out of "
-"stock."
+msgid "Sell this product as a pre-order. It stays purchasable even when out of stock."
 msgstr ""
 
-#: src/Admin/Settings.php:45 src/Admin/Settings.php:46
-#: src/Admin/Settings.php:119
-msgid "Pre-orders"
+#: src/Admin/ProductDataPanel.php:38
+msgid "Expected release date"
 msgstr ""
 
-#: src/Admin/Settings.php:64
-msgid "Settings"
-msgstr ""
-
-#: src/Admin/Settings.php:123
-msgid "Settings saved."
-msgstr ""
-
-#: src/Admin/Settings.php:128
-msgid ""
-"Flag any product as a pre-order from the product editor (Product data → "
-"General). The options here set the store-wide defaults that those products "
-"inherit."
-msgstr ""
-
-#: src/Admin/Settings.php:136
-msgid "Storefront behaviour"
-msgstr ""
-
-#: src/Admin/Settings.php:138
-msgid "Controls whether the pre-order rules run on your live store."
-msgstr ""
-
-#: src/Admin/Settings.php:145
-msgid "Enable pre-orders"
-msgstr ""
-
-#: src/Admin/Settings.php:157
-msgid "Apply pre-order behaviour on the storefront."
-msgstr ""
-
-#: src/Admin/Settings.php:160
-msgid ""
-"Lets flagged products stay purchasable while out of stock and shows the pre-"
-"order button. Turn this off to pause every pre-order store-wide in one "
-"click, without un-flagging each product. Default: on."
-msgstr ""
-
-#: src/Admin/Settings.php:169
-msgid "Pre-order button"
-msgstr ""
-
-#: src/Admin/Settings.php:171
-msgid "The label shoppers see in place of the usual add-to-cart text."
-msgstr ""
-
-#: src/Admin/Settings.php:178
-msgid "Default button text"
-msgstr ""
-
-#: src/Admin/Settings.php:191
-msgid "Shoppers see:"
-msgstr ""
-
-#. translators: %s: default button label, e.g. "Pre-order now".
-#: src/Admin/Settings.php:198
-#, php-format
-msgid ""
-"Replaces the add-to-cart label on pre-order products. Leave blank to use %s. "
-"Any single product can override this from its own editor."
-msgstr ""
-
-#: src/Admin/Settings.php:209
-msgid "Save changes"
-msgstr ""
-
-#: src/Admin/Settings.php:218
-msgid "You do not have permission to manage these settings."
-msgstr ""
-
-#: src/Service/PreorderService.php:163
-msgid "Reserved as a pre-order"
-msgstr ""
-
-#: src/Service/PreorderService.php:164
-msgid ""
-"Not in stock yet, your order holds a place in line and ships when it arrives."
-msgstr ""
-
-#: src/Service/PreorderService.php:213 src/Service/PreorderService.php:234
-msgid "Yes"
-msgstr ""
-
-#: src/Settings.php:50
-msgid "Pre-order now"
+#: src/Admin/ProductDataPanel.php:39
+msgid "Optional. Shown on the product page and used by add-ons for release notifications."
 msgstr ""
 
 #: src/Admin/ProUpsell.php:78
@@ -157,54 +69,139 @@ msgstr ""
 msgid "Coming soon"
 msgstr ""
 
-#. translators: %d: yearly price in PLN
-#: src/Admin/ProUpsell.php:83
-#, php-format
-msgid "od %d zł/rok"
-msgstr ""
-
 #. translators: 1: currency symbol, 2: yearly price
-#: src/Admin/ProUpsell.php:88
+#: src/Admin/ProUpsell.php:84
 #, php-format
 msgid "from %1$s%2$d/yr"
 msgstr ""
 
-#: src/Admin/ProUpsell.php:97
+#: src/Admin/ProUpsell.php:93
 msgid "Upgrade to PRO"
 msgstr ""
 
-#: src/Admin/ProUpsell.php:98
+#: src/Admin/ProUpsell.php:94
 msgid "Powiadom mnie"
 msgstr ""
 
-#: src/Admin/ProUpsell.php:98
+#: src/Admin/ProUpsell.php:94
 msgid "Get notified"
 msgstr ""
 
-#: src/Admin/ProUpsell.php:128
+#: src/Admin/ProUpsell.php:124
 msgid "Permission denied."
 msgstr ""
 
 #. translators: %s: PRO edition name
-#: src/Admin/ProUpsell.php:158
+#: src/Admin/ProUpsell.php:154
 #, php-format
 msgid "Do more with %s"
 msgstr ""
 
-#: src/Admin/ProUpsell.php:165
+#: src/Admin/ProUpsell.php:161
 msgid "Dismiss this notice"
 msgstr ""
 
-#: src/Admin/ProUpsell.php:182
+#: src/Admin/ProUpsell.php:178
 msgid "Unlock every PRO feature"
 msgstr ""
 
-#: src/Admin/ProUpsell.php:195
+#: src/Admin/ProUpsell.php:191
 msgid "one licence, every PRO feature"
 msgstr ""
 
 #. translators: %s: PRO edition name
-#: src/Admin/ProUpsell.php:214
+#: src/Admin/ProUpsell.php:210
 #, php-format
 msgid "What %s adds"
+msgstr ""
+
+#: src/Admin/Settings.php:53
+#: src/Admin/Settings.php:54
+#: src/Admin/Settings.php:127
+msgid "Pre-orders"
+msgstr ""
+
+#: src/Admin/Settings.php:72
+msgid "Settings"
+msgstr ""
+
+#: src/Admin/Settings.php:133
+msgid "Settings saved."
+msgstr ""
+
+#: src/Admin/Settings.php:138
+msgid "Flag any product as a pre-order from the product editor (Product data → General). The options here set the store-wide defaults that those products inherit."
+msgstr ""
+
+#: src/Admin/Settings.php:146
+msgid "Storefront behaviour"
+msgstr ""
+
+#: src/Admin/Settings.php:148
+msgid "Controls whether the pre-order rules run on your live store."
+msgstr ""
+
+#: src/Admin/Settings.php:155
+msgid "Enable pre-orders"
+msgstr ""
+
+#: src/Admin/Settings.php:167
+msgid "Apply pre-order behaviour on the storefront."
+msgstr ""
+
+#: src/Admin/Settings.php:170
+msgid "Lets flagged products stay purchasable while out of stock and shows the pre-order button. Turn this off to pause every pre-order store-wide in one click, without un-flagging each product. Default: on."
+msgstr ""
+
+#: src/Admin/Settings.php:179
+msgid "Pre-order button"
+msgstr ""
+
+#: src/Admin/Settings.php:181
+msgid "The label shoppers see in place of the usual add-to-cart text."
+msgstr ""
+
+#: src/Admin/Settings.php:188
+msgid "Default button text"
+msgstr ""
+
+#: src/Admin/Settings.php:201
+msgid "Shoppers see:"
+msgstr ""
+
+#. translators: %s: default button label, e.g. "Pre-order now".
+#: src/Admin/Settings.php:208
+#, php-format
+msgid "Replaces the add-to-cart label on pre-order products across the store. Leave blank to use %s."
+msgstr ""
+
+#: src/Admin/Settings.php:219
+msgid "Save changes"
+msgstr ""
+
+#: src/Admin/Settings.php:230
+msgid "You do not have permission to manage these settings."
+msgstr ""
+
+#: src/Service/PreorderService.php:176
+msgid "Reserved as a pre-order"
+msgstr ""
+
+#: src/Service/PreorderService.php:177
+msgid "Not in stock yet, your order holds a place in line and ships when it arrives."
+msgstr ""
+
+#. translators: %s: formatted release date
+#: src/Service/PreorderService.php:196
+#, php-format
+msgid "Expected release: %s"
+msgstr ""
+
+#: src/Service/PreorderService.php:259
+#: src/Service/PreorderService.php:280
+msgid "Yes"
+msgstr ""
+
+#: src/Settings.php:50
+msgid "Pre-order now"
 msgstr ""
