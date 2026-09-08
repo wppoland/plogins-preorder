@@ -4,7 +4,7 @@ Tags: woocommerce, preorder, pre-order, backorder, out of stock
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.8
+Stable tag: 1.0.9
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -99,6 +99,11 @@ plugin.
 Plogins Preorder is fully translatable and ships the `plogins-preorder.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.0.9 =
+* Fixed: the pre-order button always read "Pre-order now" in English, whatever language the shop ran in. The label shipped as a plain English sentence in a config file, and that value reached the storefront before the translated one was ever considered, so the Polish, German and Spanish translations of it were never used. Opening the settings screen showed the same English text in the field, and saving wrote it into the database, where it stayed English for good.
+* The default label is now a translated string resolved at the moment the button is drawn, never written back to the database. It follows the site language as soon as a translation for it exists. Translations arrive as WordPress.org language packs and are not bundled in this download, so the label stays English until a pack is published. A label you typed yourself is still used exactly as typed.
+* On update, a label left byte for byte as the old English default is cleared so the translated one takes over. Anything you edited, including a hand translation, is matched exactly and kept.
 
 = 1.0.8 =
 * Renamed to Plogins Preorder - Pre-Orders for WooCommerce so the name leads with the brand rather than a generic word, which is what the WordPress.org plugin review team asks for. The plugin slug is unchanged.

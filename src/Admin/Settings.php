@@ -7,6 +7,7 @@ namespace Preorder\Admin;
 defined('ABSPATH') || exit;
 
 use Preorder\Contract\HasHooks;
+use Preorder\Service\Texts;
 use Preorder\Settings as SettingsStore;
 
 /**
@@ -103,7 +104,7 @@ final class Settings implements HasHooks
             . 'var d=%s;'
             . 'var sync=function(){p.textContent=(i.value.trim()||d);};'
             . 'i.addEventListener("input",sync);sync();});',
-            wp_json_encode($this->store->defaultButtonText()),
+            wp_json_encode(Texts::defaults()['default_button_text']),
         );
 
         wp_add_inline_script('preorder-admin', $preview);
@@ -115,10 +116,13 @@ final class Settings implements HasHooks
             return;
         }
 
+        // Raw on purpose: the field must edit what is stored, never the resolved
+        // text. Rendering the resolved default as the value would save it back
+        // and freeze one language into the option.
         $settings       = $this->store->all();
         $enabled        = (bool) ($settings['enabled'] ?? true);
         $buttonText     = (string) ($settings['default_button_text'] ?? '');
-        $defaultButton  = $this->store->defaultButtonText();
+        $defaultButton  = Texts::defaults()['default_button_text'];
         $previewLabel   = '' !== trim($buttonText) ? $buttonText : $defaultButton;
         $saved          = isset($_GET['preorder-saved']); // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- read-only UI flag.
 
