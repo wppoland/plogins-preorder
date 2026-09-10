@@ -164,6 +164,31 @@ final class PreorderService implements HasHooks
      * is inbound and they are holding a place in line. The cart behaviour is
      * handled by the filters above and is unaffected by this output.
      */
+    /**
+     * "Expected release: 5 June 2026", or an empty string when there is no date.
+     *
+     * Shared with the variation payload so the storefront cannot end up with
+     * two different wordings or two different date formats for one fact.
+     */
+    private function releaseSentence(string $release): string
+    {
+        if ($release === '') {
+            return '';
+        }
+
+        $timestamp = strtotime($release . ' 12:00:00');
+
+        if ($timestamp === false) {
+            return '';
+        }
+
+        return sprintf(
+            /* translators: %s: formatted release date */
+            __('Expected release: %s', 'plogins-preorder'),
+            wp_date((string) get_option('date_format'), $timestamp),
+        );
+    }
+
     public function renderStub(): void
     {
         global $product;
@@ -189,15 +214,13 @@ final class PreorderService implements HasHooks
         echo esc_html($title);
         echo '</span>';
         echo '<span class="preorder-stub__note">' . esc_html($note) . '</span>';
-        if ('' !== $release) {
-            echo '<span class="preorder-stub__release">';
-            printf(
-                /* translators: %s: formatted release date */
-                esc_html__('Expected release: %s', 'plogins-preorder'),
-                esc_html(wp_date(get_option('date_format'), strtotime($release . ' 12:00:00'))),
-            );
-            echo '</span>';
-        }
+        // Always print the element, even empty. On a variable product the date
+        // belongs to the variation, so the script fills this in on
+        // show_variation, and it cannot fill in an element that is not there.
+        printf(
+            '<span class="preorder-stub__release">%s</span>',
+            esc_html($this->releaseSentence($release)),
+        );
         echo '</span>';
         echo '</div>';
     }
@@ -216,7 +239,15 @@ final class PreorderService implements HasHooks
 
         $data['preorder_is_preorder']      = $isPreorder;
         $data['preorder_add_to_cart_text'] = $isPreorder ? $this->settings->defaultButtonText() : '';
-        $data['preorder_release_date']     = $isPreorder ? $this->meta->releaseDate($variation) : '';
+        $release = $isPreorder ? $this->meta->releaseDate($variation) : '';
+
+        $data['preorder_release_date'] = $release;
+        // The raw date above was published and never read by anything, so a
+        // variation's release date never reached the shopper: the stub prints
+        // the PARENT product's date, and a variable product rarely has one.
+        // This carries the finished sentence, formatted and translated once on
+        // the server, so the script has nothing to format.
+        $data['preorder_release_text'] = $this->releaseSentence($release);
 
         return $data;
     }

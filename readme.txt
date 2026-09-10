@@ -4,7 +4,7 @@ Tags: woocommerce, preorder, pre-order, backorder, out of stock
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.9
+Stable tag: 1.0.10
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -99,6 +99,10 @@ plugin.
 Plogins Preorder is fully translatable and ships the `plogins-preorder.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.0.10 =
+* Fixed: on a variable product the expected release date never reached the shopper. Each variation stored its own date and the product page printed the parent product's, which a variable product rarely has, so the line was simply absent. Picking a variation now shows that variation's date.
+* Fixed: deleting the plugin left the per-user "dismiss" flag from the PRO notice in the database. Uninstall now removes it for every user, not just the one who dismissed it.
 
 = 1.0.9 =
 * Fixed: the pre-order button always read "Pre-order now" in English, whatever language the shop ran in. The label shipped as a plain English sentence in a config file, and that value reached the storefront before the translated one was ever considered, so the Polish, German and Spanish translations of it were never used. Opening the settings screen showed the same English text in the field, and saving wrote it into the database, where it stayed English for good.
