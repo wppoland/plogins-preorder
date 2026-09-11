@@ -37,8 +37,8 @@ return [
             'pl' => ['title' => 'E-maile o premierze', 'desc' => 'Automatyczne powiadomienia klientów w dniu premiery produktu (wdrożone).'],
         ],
         [
-            'en' => ['title' => 'Discount and deposit settings', 'desc' => 'Enable each feature and set percentages under WooCommerce → Pre-order Discount and Pre-order Deposit.'],
-            'pl' => ['title' => 'Ustawienia rabatu i zaliczki', 'desc' => 'Włącz funkcje i ustaw procenty w WooCommerce → Rabat przedsprzedaży oraz Zaliczka przedsprzedaży.'],
+            'en' => ['title' => 'Discount and deposit settings', 'desc' => 'Enable each feature and set percentages under WooCommerce > Pre-order Discount and Pre-order Deposit.'],
+            'pl' => ['title' => 'Ustawienia rabatu i zaliczki', 'desc' => 'Włącz funkcje i ustaw procenty w WooCommerce > Rabat przedsprzedaży oraz Zaliczka przedsprzedaży.'],
         ],
     ],
 ];
