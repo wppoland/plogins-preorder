@@ -81,12 +81,12 @@ msgstr "Ustawienia zostały zapisane."
 
 #: src/Admin/Settings.php:128
 msgid ""
-"Flag any product as a pre-order from the product editor (Product data → "
+"Flag any product as a pre-order from the product editor (Product data > "
 "General). The options here set the store-wide defaults that those products "
 "inherit."
 msgstr ""
 "Oznacz dowolny produkt jako zamówienie w przedsprzedaży w edytorze produktów "
-"(Dane produktu → Ogólne). Opcje tutaj ustawiają domyślne ustawienia całego "
+"(Dane produktu > Ogólne). Opcje tutaj ustawiają domyślne ustawienia całego "
 "sklepu, które dziedziczą te produkty."
 
 #: src/Admin/Settings.php:136
@@ -235,10 +235,10 @@ msgstr "Co dodaje %s"
 
 #~ msgid ""
 #~ "Mark individual products as pre-orders from the product editor (Product "
-#~ "data → General). These options control the storefront defaults."
+#~ "data > General). These options control the storefront defaults."
 #~ msgstr ""
 #~ "Oznaczaj poszczególne produkty jako dostępne w przedsprzedaży w edytorze "
-#~ "produktu (Dane produktu → Ogólne). Te opcje sterują domyślnymi "
+#~ "produktu (Dane produktu > Ogólne). Te opcje sterują domyślnymi "
 #~ "ustawieniami sklepu."
 
 #~ msgid ""

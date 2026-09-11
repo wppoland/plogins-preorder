@@ -32,12 +32,12 @@ do zamówienia, dzięki czemu możesz odróżnić przedsprzedaże podczas pakowa
 
 = Features =
 
-* Pole wyboru <strong>Przedsprzedaż</strong> przy każdym produkcie, w sekcji <strong>Dane produktu → Ogólne</strong>.
+* Pole wyboru <strong>Przedsprzedaż</strong> przy każdym produkcie, w sekcji <strong>Dane produktu > Ogólne</strong>.
 * Niestandardowa etykieta przycisku dodawania do koszyka dla produktów w przedsprzedaży, ustawiana dla całego sklepu.
 * Produkty w przedsprzedaży pozostają dostępne do kupienia, gdy ich stan magazynowy to „brak na stanie”.
 * Koszyk i kasa pokazują wiersz „Przedsprzedaż: Tak” przy każdej pozycji w przedsprzedaży.
 * Ta flaga jest kopiowana do pozycji zamówienia, więc widać ją na ekranie zamówienia i na listach pakowania.
-* Ekran <strong>WooCommerce → Przedsprzedaż</strong> z przełącznikiem włącz/wyłącz dla całego sklepu i domyślnym tekstem przycisku.
+* Ekran <strong>WooCommerce > Przedsprzedaż</strong> z przełącznikiem włącz/wyłącz dla całego sklepu i domyślnym tekstem przycisku.
 * Wyłączenie przełącznika sprawia, że oznaczone produkty znów zachowują się jak zwykłe produkty, bez edytowania każdego z osobna.
 * Formularze są zabezpieczone nonce i ograniczone do użytkowników mogących zarządzać WooCommerce; dane wyjściowe są escapowane, a wejściowe oczyszczane.
 * Dostarczany z szablonem tłumaczenia (plogins-preorder.pot) i polskim tłumaczeniem; usunięcie wtyczki kasuje jego ustawienie.
@@ -45,10 +45,10 @@ do zamówienia, dzięki czemu możesz odróżnić przedsprzedaże podczas pakowa
 
 == Installation ==
 
-1. Prześlij wtyczkę do `/wp-content/plugins/preorder` lub zainstaluj przez Wtyczki → Dodaj nową.
+1. Prześlij wtyczkę do `/wp-content/plugins/preorder` lub zainstaluj przez Wtyczki > Dodaj nową.
 2. Aktywuj ją. WooCommerce musi być aktywne.
-3. Edytuj produkt, otwórz <strong>Dane produktu → Ogólne</strong> i zaznacz <strong>Przedsprzedaż</strong>.
-4. Dostosuj domyślne ustawienia dla całego sklepu w sekcji <strong>WooCommerce → Przedsprzedaż</strong>.
+3. Edytuj produkt, otwórz <strong>Dane produktu > Ogólne</strong> i zaznacz <strong>Przedsprzedaż</strong>.
+4. Dostosuj domyślne ustawienia dla całego sklepu w sekcji <strong>WooCommerce > Przedsprzedaż</strong>.
 
 == Frequently Asked Questions ==
 
@@ -63,7 +63,7 @@ dodawania do koszyka, a pozycje koszyka i zamówienia zostają oznaczone jako pr
 
 = Can I pause pre-orders without editing every product? =
 
-Tak. Wyłącz globalny przełącznik w sekcji <strong>WooCommerce → Przedsprzedaż</strong>, a oznaczone
+Tak. Wyłącz globalny przełącznik w sekcji <strong>WooCommerce > Przedsprzedaż</strong>, a oznaczone
 produkty będą zachowywać się jak zwykłe produkty, dopóki nie włączysz go ponownie.
 
 = Can guests buy pre-order products? =
@@ -82,7 +82,7 @@ Tak. Ta wtyczka jest zgodna z WordPress Multisite. Aktywuj ją w całej sieci lu
 == Screenshots ==
 
 1. Pole przedsprzedaży w edytorze produktów WooCommerce.
-2. Ekran ustawień WooCommerce → Przedsprzedaż.
+2. Ekran ustawień WooCommerce > Przedsprzedaż.
 
 == External Services ==
 

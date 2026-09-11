@@ -130,7 +130,7 @@ msgid "Settings saved."
 msgstr ""
 
 #: src/Admin/Settings.php:142
-msgid "Flag any product as a pre-order from the product editor (Product data → General). The options here set the store-wide defaults that those products inherit."
+msgid "Flag any product as a pre-order from the product editor (Product data > General). The options here set the store-wide defaults that those products inherit."
 msgstr ""
 
 #: src/Admin/Settings.php:150

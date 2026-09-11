@@ -11,7 +11,7 @@ use Preorder\Service\Texts;
 use Preorder\Settings as SettingsStore;
 
 /**
- * Settings screen registered under WooCommerce → Pre-orders.
+ * Settings screen registered under WooCommerce > Pre-orders.
  *
  * Stores two values in the `preorder_settings` option: the global enable toggle
  * and the default add-to-cart button label. All output is escaped, all input
@@ -139,7 +139,7 @@ final class Settings implements HasHooks
             <?php endif; ?>
 
             <p class="preorder-intro">
-                <?php echo esc_html__('Flag any product as a pre-order from the product editor (Product data → General). The options here set the store-wide defaults that those products inherit.', 'plogins-preorder'); ?>
+                <?php echo esc_html__('Flag any product as a pre-order from the product editor (Product data > General). The options here set the store-wide defaults that those products inherit.', 'plogins-preorder'); ?>
             </p>
 
             <form method="post" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
