@@ -4,7 +4,7 @@ Tags: woocommerce, preorder, pre-order, backorder, out of stock
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.10
+Stable tag: 1.0.11
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -32,12 +32,12 @@ the order, so you can tell pre-orders apart when you pack and ship.
 
 = Features =
 
-* A **Pre-order** checkbox on every product, under **Product data → General**.
+* A **Pre-order** checkbox on every product, under **Product data > General**.
 * A custom add-to-cart label for pre-order products, set store-wide.
 * Pre-order products stay purchasable while their stock status is out of stock.
 * The cart and checkout show a "Pre-order: Yes" row on each pre-order line.
 * That flag is copied onto the order line item, so it shows on the order screen and packing slips.
-* A **WooCommerce → Pre-orders** screen with a store-wide on/off switch and the default button text.
+* A **WooCommerce > Pre-orders** screen with a store-wide on/off switch and the default button text.
 * Pausing the on/off switch makes flagged products behave like normal products again, without editing each one.
 * Forms are nonce-checked and limited to users who can manage WooCommerce; output is escaped and input sanitised.
 * Ships with a translation template (plogins-preorder.pot) and a Polish translation; removing the plugin deletes its setting.
@@ -45,10 +45,10 @@ the order, so you can tell pre-orders apart when you pack and ship.
 
 == Installation ==
 
-1. Upload the plugin to `/wp-content/plugins/preorder`, or install via Plugins → Add New.
+1. Upload the plugin to `/wp-content/plugins/preorder`, or install via Plugins > Add New.
 2. Activate it. WooCommerce must be active.
-3. Edit a product, open **Product data → General**, and tick **Pre-order**.
-4. Adjust store-wide defaults under **WooCommerce → Pre-orders**.
+3. Edit a product, open **Product data > General**, and tick **Pre-order**.
+4. Adjust store-wide defaults under **WooCommerce > Pre-orders**.
 
 == Frequently Asked Questions ==
 
@@ -63,7 +63,7 @@ changes, and the cart and order lines are flagged as pre-orders.
 
 = Can I pause pre-orders without editing every product? =
 
-Yes. Turn off the global toggle under **WooCommerce → Pre-orders** and flagged
+Yes. Turn off the global toggle under **WooCommerce > Pre-orders** and flagged
 products behave like normal products until you turn it back on.
 
 = Can guests buy pre-order products? =
@@ -82,7 +82,7 @@ Yes. This plugin is compatible with WordPress Multisite. Network activate it or 
 == Screenshots ==
 
 1. The pre-order field in the WooCommerce product editor.
-2. The WooCommerce → Pre-orders settings screen.
+2. The WooCommerce > Pre-orders settings screen.
 
 == External Services ==
 
@@ -99,6 +99,10 @@ plugin.
 Plogins Preorder is fully translatable and ships the `plogins-preorder.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.0.11 =
+* Fixed: the PRO upgrade promo kept selling to people who had already bought the paid edition. Only the banner could be dismissed, so the sidebar promo and the locked feature cards followed a paying customer around for good. The promo now checks whether the paid edition is active and steps aside when it is.
+* Fixed: arrow glyphs in the admin menu paths, and in the strings handed to translators. An arrow inside a translatable string makes the glyph every translator's problem and changes the layout in any locale that drops it.
 
 = 1.0.10 =
 * Fixed: on a variable product the expected release date never reached the shopper. Each variation stored its own date and the product page printed the parent product's, which a variable product rarely has, so the line was simply absent. Picking a variation now shows that variation's date.

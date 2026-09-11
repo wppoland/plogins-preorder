@@ -82,11 +82,11 @@ msgstr "Einstellungen gespeichert."
 
 #: src/Admin/Settings.php:128
 msgid ""
-"Flag any product as a pre-order from the product editor (Product data → "
+"Flag any product as a pre-order from the product editor (Product data > "
 "General). The options here set the store-wide defaults that those products "
 "inherit."
 msgstr ""
-"Markiere jedes Produkt im Produkteditor als Vorbestellung (Produktdaten → "
+"Markiere jedes Produkt im Produkteditor als Vorbestellung (Produktdaten > "
 "Allgemein). Die Optionen hier legen die geschäftsweiten "
 "Standardeinstellungen fest, die diese Produkte übernehmen."
 
