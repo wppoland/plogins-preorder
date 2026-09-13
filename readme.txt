@@ -4,7 +4,7 @@ Tags: woocommerce, preorder, pre-order, backorder, out of stock
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.11
+Stable tag: 1.0.12
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -99,6 +99,9 @@ plugin.
 Plogins Preorder is fully translatable and ships the `plogins-preorder.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.0.12 =
+* Fixed: a variable product asked whether anything in it pre-orders by loading a full product object per variation, and the single product page asks that question twice, so a product with fifty variations built a hundred product objects on every view to be told no. The answer now comes from the variation meta, primed in one query. A plugin filtering `preorder/is_preorder` is still shown every variation.
 
 = 1.0.11 =
 * Fixed: the PRO upgrade promo kept selling to people who had already bought the paid edition. Only the banner could be dismissed, so the sidebar promo and the locked feature cards followed a paying customer around for good. The promo now checks whether the paid edition is active and steps aside when it is.
