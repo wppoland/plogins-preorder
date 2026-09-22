@@ -2,8 +2,8 @@
 # This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Plogins Preorder - Pre-Orders for WooCommerce 1.0.9\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/plogins-preorder\n"
+"Project-Id-Version: Rezervo - Pre-Orders for WooCommerce 1.0.9\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/rezervo\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -12,35 +12,35 @@ msgstr ""
 "POT-Creation-Date: 2026-09-08T13:42:48+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
-"X-Domain: plogins-preorder\n"
+"X-Domain: rezervo\n"
 
 #. Plugin Name of the plugin
-#: plogins-preorder.php
-msgid "Plogins Preorder - Pre-Orders for WooCommerce"
+#: rezervo.php
+msgid "Rezervo - Pre-Orders for WooCommerce"
 msgstr ""
 
 #. Plugin URI of the plugin
-#: plogins-preorder.php
+#: rezervo.php
 msgid "https://plogins.com/plogins-preorder/"
 msgstr ""
 
 #. Description of the plugin
-#: plogins-preorder.php
+#: rezervo.php
 msgid "Let customers pre-order upcoming or out-of-stock WooCommerce products with a custom add-to-cart button."
 msgstr ""
 
 #. Author of the plugin
-#: plogins-preorder.php
+#: rezervo.php
 msgid "WPPoland.com"
 msgstr ""
 
 #. Author URI of the plugin
-#: plogins-preorder.php
+#: rezervo.php
 msgid "https://wppoland.com"
 msgstr ""
 
-#: plogins-preorder.php:48
-msgid "Plogins Preorder - Pre-Orders for WooCommerce requires WooCommerce to be active."
+#: rezervo.php:48
+msgid "Rezervo requires WooCommerce to be active."
 msgstr ""
 
 #: src/Admin/ProductDataPanel.php:32

@@ -1,10 +1,10 @@
-=== Plogins Preorder - Pre-Orders for WooCommerce ===
+=== Rezervo - Pre-Orders for WooCommerce ===
 Contributors: motylanogha
 Tags: woocommerce, preorder, pre-order, backorder, out of stock
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.0.12
+Stable tag: 1.1.0
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -13,7 +13,7 @@ Let customers pre-order upcoming or out-of-stock WooCommerce products with a cus
 
 == Description ==
 
-Preorder lets you sell WooCommerce products before they are in stock. Tick a box
+Rezervo lets you sell WooCommerce products before they are in stock. Tick a box
 on the product and it stays purchasable even when its stock status is out of
 stock, so a customer can reserve an upcoming release or a restock instead of
 landing on a dead "out of stock" page.
@@ -40,12 +40,12 @@ the order, so you can tell pre-orders apart when you pack and ship.
 * A **WooCommerce > Pre-orders** screen with a store-wide on/off switch and the default button text.
 * Pausing the on/off switch makes flagged products behave like normal products again, without editing each one.
 * Forms are nonce-checked and limited to users who can manage WooCommerce; output is escaped and input sanitised.
-* Ships with a translation template (plogins-preorder.pot) and a Polish translation; removing the plugin deletes its setting.
+* Ships with a translation template (rezervo.pot) and a Polish translation; removing the plugin deletes its setting.
 * Works with WooCommerce HPOS and the cart and checkout blocks.
 
 == Installation ==
 
-1. Upload the plugin to `/wp-content/plugins/preorder`, or install via Plugins > Add New.
+1. Upload the plugin to `/wp-content/plugins/rezervo`, or install via Plugins > Add New.
 2. Activate it. WooCommerce must be active.
 3. Edit a product, open **Product data > General**, and tick **Pre-order**.
 4. Adjust store-wide defaults under **WooCommerce > Pre-orders**.
@@ -86,7 +86,7 @@ Yes. This plugin is compatible with WordPress Multisite. Network activate it or 
 
 == External Services ==
 
-Preorder does not connect to any external services. It makes no outbound HTTP
+Rezervo does not connect to any external services. It makes no outbound HTTP
 requests, loads no remote scripts, fonts, or analytics, and sends no data off
 your site. Everything runs on your own WordPress install: the store-wide button
 text and on/off switch live in the `preorder_settings` option, the per-product
@@ -96,9 +96,12 @@ plugin.
 
 == Translations ==
 
-Plogins Preorder is fully translatable and ships the `plogins-preorder.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
+Rezervo is fully translatable and ships the `rezervo.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.1.0 =
+* Renamed to Rezervo. The WordPress.org review team asks a plugin name to lead with a distinctive, coined identifier rather than a generic descriptive word. Rezervo is Esperanto for a reservation. The text domain follows the name; the stored data, the settings and every hook are unchanged.
 
 = 1.0.12 =
 * Fixed: a variable product asked whether anything in it pre-orders by loading a full product object per variation, and the single product page asks that question twice, so a product with fifty variations built a hundred product objects on every view to be told no. The answer now comes from the variation meta, primed in one query. A plugin filtering `preorder/is_preorder` is still shown every variation.

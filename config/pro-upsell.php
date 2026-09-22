@@ -10,7 +10,7 @@
 defined('ABSPATH') || exit;
 
 return [
-    'name'       => 'Preorder Pro',
+    'name'       => 'Rezervo Pro',
     'url'        => 'https://plogins.com/plogins-preorder-pro/pricing/',
     'sellable'   => true,
     'price_from' => 29,
