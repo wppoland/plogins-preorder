@@ -14,12 +14,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
 "|| n%100>14) ? 1 : 2);\n"
-"X-Domain: plogins-preorder\n"
+"X-Domain: rezervo\n"
 "X-Generator: WP-CLI 2.12.0\n"
 
 #. Plugin Name of the plugin
 #: preorder.php
-msgid "Plogins Preorder - Pre-Orders for WooCommerce"
+msgid "Rezervo - Pre-Orders for WooCommerce"
 msgstr "Plogins Preorder - Przedsprzedaż dla WooCommerce"
 
 #. Plugin URI of the plugin
@@ -49,7 +49,7 @@ msgstr "https://plogins.com/"
 
 #: preorder.php:47
 msgid ""
-"Plogins Preorder - Pre-Orders for WooCommerce requires WooCommerce to be "
+"Rezervo - Pre-Orders for WooCommerce requires WooCommerce to be "
 "active."
 msgstr "Plogins Preorder - Przedsprzedaż dla WooCommerce wymaga aktywnego WooCommerce."
 

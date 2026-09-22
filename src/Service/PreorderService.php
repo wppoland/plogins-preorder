@@ -184,7 +184,7 @@ final class PreorderService implements HasHooks
 
         return sprintf(
             /* translators: %s: formatted release date */
-            __('Expected release: %s', 'plogins-preorder'),
+            __('Expected release: %s', 'rezervo'),
             wp_date((string) get_option('date_format'), $timestamp),
         );
     }
@@ -198,8 +198,8 @@ final class PreorderService implements HasHooks
         }
 
         $visible = $this->applies($product);
-        $title   = __('Reserved as a pre-order', 'plogins-preorder');
-        $note    = __('Not in stock yet, your order holds a place in line and ships when it arrives.', 'plogins-preorder');
+        $title   = __('Reserved as a pre-order', 'rezervo');
+        $note    = __('Not in stock yet, your order holds a place in line and ships when it arrives.', 'rezervo');
         $release = $visible ? $this->meta->releaseDate($product) : '';
 
         printf(
@@ -286,8 +286,8 @@ final class PreorderService implements HasHooks
         }
 
         $itemData[] = [
-            'key'   => __('Pre-order', 'plogins-preorder'),
-            'value' => __('Yes', 'plogins-preorder'),
+            'key'   => __('Pre-order', 'rezervo'),
+            'value' => __('Yes', 'rezervo'),
         ];
 
         return $itemData;
@@ -308,7 +308,7 @@ final class PreorderService implements HasHooks
             return;
         }
 
-        $item->add_meta_data(__('Pre-order', 'plogins-preorder'), __('Yes', 'plogins-preorder'), true);
+        $item->add_meta_data(__('Pre-order', 'rezervo'), __('Yes', 'rezervo'), true);
         $item->add_meta_data(self::ORDER_LINE_KEY, 'yes', true);
     }
 }

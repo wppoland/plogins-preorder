@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name:       Plogins Preorder - Pre-Orders for WooCommerce
+ * Plugin Name:       Rezervo - Pre-Orders for WooCommerce
  * Plugin URI:        https://plogins.com/plogins-preorder/
  * Description:        Let customers pre-order upcoming or out-of-stock WooCommerce products with a custom add-to-cart button.
- * Version:           1.0.12
+ * Version:           1.1.0
  * Requires at least: 6.5
  * Requires PHP:      8.1
  * Requires Plugins:  woocommerce
@@ -11,7 +11,7 @@
  * Author URI:        https://wppoland.com
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       plogins-preorder
+ * Text Domain:       rezervo
  * Domain Path:       /languages
  * WC requires at least: 8.0
  * WC tested up to: 11.0
@@ -25,7 +25,7 @@ namespace Preorder;
 
 defined('ABSPATH') || exit;
 
-const VERSION     = '1.0.12';
+const VERSION     = '1.1.0';
 const PLUGIN_FILE = __FILE__;
 
 define('PREORDER_DIR', plugin_dir_path(__FILE__));
@@ -45,7 +45,7 @@ add_action('plugins_loaded', static function (): void {
     if (! class_exists('WooCommerce')) {
         add_action('admin_notices', static function (): void {
             echo '<div class="notice notice-error"><p>';
-            echo esc_html__('Plogins Preorder - Pre-Orders for WooCommerce requires WooCommerce to be active.', 'plogins-preorder');
+            echo esc_html__('Rezervo requires WooCommerce to be active.', 'rezervo');
             echo '</p></div>';
         });
         return;

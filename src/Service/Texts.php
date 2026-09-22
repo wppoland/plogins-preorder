@@ -30,7 +30,7 @@ final class Texts
     public static function defaults(): array
     {
         return [
-            'default_button_text' => __('Pre-order now', 'plogins-preorder'),
+            'default_button_text' => __('Pre-order now', 'rezervo'),
         ];
     }
 

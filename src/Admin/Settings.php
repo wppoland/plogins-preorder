@@ -51,8 +51,8 @@ final class Settings implements HasHooks
     {
         add_submenu_page(
             'woocommerce',
-            __('Pre-orders', 'plogins-preorder'),
-            __('Pre-orders', 'plogins-preorder'),
+            __('Pre-orders', 'rezervo'),
+            __('Pre-orders', 'rezervo'),
             'manage_woocommerce',
             self::PAGE,
             [$this, 'renderPage'],
@@ -70,7 +70,7 @@ final class Settings implements HasHooks
         $settingsLink = sprintf(
             '<a href="%s">%s</a>',
             esc_url($url),
-            esc_html__('Settings', 'plogins-preorder'),
+            esc_html__('Settings', 'rezervo'),
         );
 
         array_unshift($links, $settingsLink);
@@ -128,18 +128,18 @@ final class Settings implements HasHooks
 
         ?>
         <div class="wrap preorder-settings">
-            <h1><?php echo esc_html__('Pre-orders', 'plogins-preorder'); ?></h1>
+            <h1><?php echo esc_html__('Pre-orders', 'rezervo'); ?></h1>
 
             <?php $this->proUpsell()->banner(); ?>
 
             <?php if ($saved) : ?>
                 <div class="notice notice-success is-dismissible" role="status">
-                    <p><?php echo esc_html__('Settings saved.', 'plogins-preorder'); ?></p>
+                    <p><?php echo esc_html__('Settings saved.', 'rezervo'); ?></p>
                 </div>
             <?php endif; ?>
 
             <p class="preorder-intro">
-                <?php echo esc_html__('Flag any product as a pre-order from the product editor (Product data > General). The options here set the store-wide defaults that those products inherit.', 'plogins-preorder'); ?>
+                <?php echo esc_html__('Flag any product as a pre-order from the product editor (Product data > General). The options here set the store-wide defaults that those products inherit.', 'rezervo'); ?>
             </p>
 
             <form method="post" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
@@ -147,16 +147,16 @@ final class Settings implements HasHooks
                 <?php wp_nonce_field(self::NONCE); ?>
 
                 <div class="preorder-section">
-                    <h2 class="preorder-section__title"><?php echo esc_html__('Storefront behaviour', 'plogins-preorder'); ?></h2>
+                    <h2 class="preorder-section__title"><?php echo esc_html__('Storefront behaviour', 'rezervo'); ?></h2>
                     <p class="preorder-section__lead">
-                        <?php echo esc_html__('Controls whether the pre-order rules run on your live store.', 'plogins-preorder'); ?>
+                        <?php echo esc_html__('Controls whether the pre-order rules run on your live store.', 'rezervo'); ?>
                     </p>
 
                     <table class="form-table" role="presentation">
                         <tbody>
                             <tr>
                                 <th scope="row">
-                                    <label for="preorder-enabled"><?php echo esc_html__('Enable pre-orders', 'plogins-preorder'); ?></label>
+                                    <label for="preorder-enabled"><?php echo esc_html__('Enable pre-orders', 'rezervo'); ?></label>
                                 </th>
                                 <td>
                                     <label class="preorder-toggle">
@@ -168,10 +168,10 @@ final class Settings implements HasHooks
                                             <?php checked($enabled); ?>
                                             aria-describedby="preorder-enabled-help"
                                         />
-                                        <?php echo esc_html__('Apply pre-order behaviour on the storefront.', 'plogins-preorder'); ?>
+                                        <?php echo esc_html__('Apply pre-order behaviour on the storefront.', 'rezervo'); ?>
                                     </label>
                                     <p class="description" id="preorder-enabled-help">
-                                        <?php echo esc_html__('Lets flagged products stay purchasable while out of stock and shows the pre-order button. Turn this off to pause every pre-order store-wide in one click, without un-flagging each product. Default: on.', 'plogins-preorder'); ?>
+                                        <?php echo esc_html__('Lets flagged products stay purchasable while out of stock and shows the pre-order button. Turn this off to pause every pre-order store-wide in one click, without un-flagging each product. Default: on.', 'rezervo'); ?>
                                     </p>
                                 </td>
                             </tr>
@@ -180,16 +180,16 @@ final class Settings implements HasHooks
                 </div>
 
                 <div class="preorder-section">
-                    <h2 class="preorder-section__title"><?php echo esc_html__('Pre-order button', 'plogins-preorder'); ?></h2>
+                    <h2 class="preorder-section__title"><?php echo esc_html__('Pre-order button', 'rezervo'); ?></h2>
                     <p class="preorder-section__lead">
-                        <?php echo esc_html__('The label shoppers see in place of the usual add-to-cart text.', 'plogins-preorder'); ?>
+                        <?php echo esc_html__('The label shoppers see in place of the usual add-to-cart text.', 'rezervo'); ?>
                     </p>
 
                     <table class="form-table" role="presentation">
                         <tbody>
                             <tr>
                                 <th scope="row">
-                                    <label for="preorder-button-text"><?php echo esc_html__('Default button text', 'plogins-preorder'); ?></label>
+                                    <label for="preorder-button-text"><?php echo esc_html__('Default button text', 'rezervo'); ?></label>
                                 </th>
                                 <td>
                                     <input
@@ -202,14 +202,14 @@ final class Settings implements HasHooks
                                         aria-describedby="preorder-button-text-help"
                                     />
                                     <p class="preorder-preview" aria-hidden="true">
-                                        <span class="preorder-preview__label"><?php echo esc_html__('Shoppers see:', 'plogins-preorder'); ?></span>
+                                        <span class="preorder-preview__label"><?php echo esc_html__('Shoppers see:', 'rezervo'); ?></span>
                                         <span class="preorder-preview__btn" id="preorder-button-preview"><?php echo esc_html($previewLabel); ?></span>
                                     </p>
                                     <p class="description" id="preorder-button-text-help">
                                         <?php
                                         printf(
                                             /* translators: %s: default button label, e.g. "Pre-order now". */
-                                            esc_html__('Replaces the add-to-cart label on pre-order products across the store. Leave blank to use %s.', 'plogins-preorder'),
+                                            esc_html__('Replaces the add-to-cart label on pre-order products across the store. Leave blank to use %s.', 'rezervo'),
                                             '<code>' . esc_html($defaultButton) . '</code>',
                                         );
                                         ?>
@@ -220,7 +220,7 @@ final class Settings implements HasHooks
                     </table>
                 </div>
 
-                <?php submit_button(__('Save changes', 'plogins-preorder')); ?>
+                <?php submit_button(__('Save changes', 'rezervo')); ?>
             </form>
 
             <?php $this->proUpsell()->cards(); ?>
@@ -231,7 +231,7 @@ final class Settings implements HasHooks
     public function handleSave(): void
     {
         if (! current_user_can('manage_woocommerce')) {
-            wp_die(esc_html__('You do not have permission to manage these settings.', 'plogins-preorder'));
+            wp_die(esc_html__('You do not have permission to manage these settings.', 'rezervo'));
         }
 
         check_admin_referer(self::NONCE);

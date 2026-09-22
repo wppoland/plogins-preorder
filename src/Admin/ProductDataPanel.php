@@ -29,14 +29,14 @@ final class ProductDataPanel implements HasHooks
 
         woocommerce_wp_checkbox([
             'id'          => ProductMeta::META_ENABLED,
-            'label'       => __('Pre-order', 'plogins-preorder'),
-            'description' => __('Sell this product as a pre-order. It stays purchasable even when out of stock.', 'plogins-preorder'),
+            'label'       => __('Pre-order', 'rezervo'),
+            'description' => __('Sell this product as a pre-order. It stays purchasable even when out of stock.', 'rezervo'),
         ]);
 
         woocommerce_wp_text_input([
             'id'          => ProductMeta::META_RELEASE_DATE,
-            'label'       => __('Expected release date', 'plogins-preorder'),
-            'description' => __('Optional. Shown on the product page and used by add-ons for release notifications.', 'plogins-preorder'),
+            'label'       => __('Expected release date', 'rezervo'),
+            'description' => __('Optional. Shown on the product page and used by add-ons for release notifications.', 'rezervo'),
             'type'        => 'date',
             'value'       => $this->releaseDateValue(),
         ]);
