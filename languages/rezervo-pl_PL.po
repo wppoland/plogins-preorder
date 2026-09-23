@@ -25,7 +25,7 @@ msgstr "Plogins Preorder - Przedsprzedaż dla WooCommerce"
 #. Plugin URI of the plugin
 #: rezervo.php
 msgid "https://plogins.com/plogins-preorder/"
-msgstr ""
+msgstr "https://plogins.com/plogins-preorder/"
 
 #. Description of the plugin
 #: rezervo.php
@@ -40,16 +40,16 @@ msgstr ""
 #. Author of the plugin
 #: rezervo.php
 msgid "WPPoland.com"
-msgstr ""
+msgstr "WPPoland.com"
 
 #. Author URI of the plugin
 #: rezervo.php
 msgid "https://wppoland.com"
-msgstr ""
+msgstr "https://wppoland.com"
 
 #: rezervo.php:48
 msgid "Rezervo requires WooCommerce to be active."
-msgstr ""
+msgstr "Preorder wymaga aktywnego WooCommerce."
 
 #: src/Admin/ProductDataPanel.php:32 src/Service/PreorderService.php:258
 #: src/Service/PreorderService.php:280
@@ -66,13 +66,13 @@ msgstr ""
 
 #: src/Admin/ProductDataPanel.php:38
 msgid "Expected release date"
-msgstr ""
+msgstr "Przewidywana data premiery"
 
 #: src/Admin/ProductDataPanel.php:39
 msgid ""
 "Optional. Shown on the product page and used by add-ons for release "
 "notifications."
-msgstr ""
+msgstr "Opcjonalne. Pokazywana na stronie produktu i wykorzystywana przez dodatki do powiadomień o premierze."
 
 #: src/Admin/ProUpsell.php:78
 msgid "Wkrótce"
@@ -203,7 +203,7 @@ msgstr "Kupujący widzą:"
 msgid ""
 "Replaces the add-to-cart label on pre-order products across the store. Leave "
 "blank to use %s."
-msgstr ""
+msgstr "Zastępuje etykietę dodawania do koszyka na produktach w przedsprzedaży w całym sklepie. Zostaw puste, aby użyć %s."
 
 #: src/Admin/Settings.php:223
 msgid "Save changes"
@@ -228,7 +228,7 @@ msgstr ""
 #: src/Service/PreorderService.php:196
 #, php-format
 msgid "Expected release: %s"
-msgstr ""
+msgstr "Przewidywana premiera: %s"
 
 #: src/Service/PreorderService.php:259 src/Service/PreorderService.php:280
 msgid "Yes"
