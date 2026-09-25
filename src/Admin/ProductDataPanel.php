@@ -63,12 +63,12 @@ final class ProductDataPanel implements HasHooks
 
     public function saveFields(\WC_Product $product): void
     {
-        // WooCommerce verifies woocommerce_meta_nonce before this hook fires; re-check defensively.
-        $nonce = isset($_POST['woocommerce_meta_nonce'])
-            ? sanitize_text_field(wp_unslash((string) $_POST['woocommerce_meta_nonce']))
-            : '';
+        // The product editor's own nonce field is verified here, before any field is read.
+        if (! isset($_POST['woocommerce_meta_nonce']) || ! wp_verify_nonce(sanitize_text_field(wp_unslash((string) $_POST['woocommerce_meta_nonce'])), 'woocommerce_save_data')) {
+            return;
+        }
 
-        if ('' === $nonce || ! wp_verify_nonce($nonce, 'woocommerce_save_data')) {
+        if (! current_user_can('edit_product', $product->get_id())) {
             return;
         }
 
