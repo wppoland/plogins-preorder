@@ -124,7 +124,8 @@ final class Settings implements HasHooks
         $buttonText     = (string) ($settings['default_button_text'] ?? '');
         $defaultButton  = Texts::defaults()['default_button_text'];
         $previewLabel   = '' !== trim($buttonText) ? $buttonText : $defaultButton;
-        $saved          = isset($_GET['preorder-saved']); // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- read-only UI flag.
+        // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- read-only view parameter, only the value '1' is accepted.
+        $saved          = isset($_GET['preorder-saved']) && '1' === sanitize_key((string) wp_unslash($_GET['preorder-saved']));
 
         ?>
         <div class="wrap preorder-settings">
