@@ -19,7 +19,7 @@ msgstr ""
 #. Plugin Name of the plugin
 #: rezervo.php
 msgid "Rezervo - Pre-Orders for WooCommerce"
-msgstr "Plogins Reserva - Reservas para WooCommerce"
+msgstr "Rezervo - Reservas para WooCommerce"
 
 #. Plugin URI of the plugin
 #: rezervo.php

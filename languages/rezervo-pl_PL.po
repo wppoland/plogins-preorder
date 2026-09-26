@@ -20,7 +20,7 @@ msgstr ""
 #. Plugin Name of the plugin
 #: rezervo.php
 msgid "Rezervo - Pre-Orders for WooCommerce"
-msgstr "Plogins Preorder - Przedsprzedaż dla WooCommerce"
+msgstr "Rezervo - Przedsprzedaż dla WooCommerce"
 
 #. Plugin URI of the plugin
 #: rezervo.php
@@ -49,7 +49,7 @@ msgstr "https://wppoland.com"
 
 #: rezervo.php:48
 msgid "Rezervo requires WooCommerce to be active."
-msgstr "Preorder wymaga aktywnego WooCommerce."
+msgstr "Rezervo wymaga aktywnego WooCommerce."
 
 #: src/Admin/ProductDataPanel.php:32 src/Service/PreorderService.php:258
 #: src/Service/PreorderService.php:280
@@ -72,7 +72,9 @@ msgstr "Przewidywana data premiery"
 msgid ""
 "Optional. Shown on the product page and used by add-ons for release "
 "notifications."
-msgstr "Opcjonalne. Pokazywana na stronie produktu i wykorzystywana przez dodatki do powiadomień o premierze."
+msgstr ""
+"Opcjonalne. Pokazywana na stronie produktu i wykorzystywana przez dodatki do "
+"powiadomień o premierze."
 
 #: src/Admin/ProUpsell.php:78
 msgid "Wkrótce"
@@ -203,7 +205,9 @@ msgstr "Kupujący widzą:"
 msgid ""
 "Replaces the add-to-cart label on pre-order products across the store. Leave "
 "blank to use %s."
-msgstr "Zastępuje etykietę dodawania do koszyka na produktach w przedsprzedaży w całym sklepie. Zostaw puste, aby użyć %s."
+msgstr ""
+"Zastępuje etykietę dodawania do koszyka na produktach w przedsprzedaży w "
+"całym sklepie. Zostaw puste, aby użyć %s."
 
 #: src/Admin/Settings.php:223
 msgid "Save changes"
