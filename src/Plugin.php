@@ -39,6 +39,8 @@ final class Plugin
         }
         $this->booted = true;
 
+        $this->container->get(Migrator::class)->maybeMigrate();
+
         /** @var array<class-string<HasHooks>> $hooks */
         $hooks = require __DIR__ . '/../config/hooks.php';
         foreach ($hooks as $id) {

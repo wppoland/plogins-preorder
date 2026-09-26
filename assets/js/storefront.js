@@ -46,6 +46,20 @@
 		button.textContent = text;
 	}
 
+	// A variable product's release date belongs to the variation, not to the
+	// parent, so the server renders this element empty and it is filled in
+	// here. It used to be left out entirely and the date never reached anyone.
+	function setReleaseText( stub, text ) {
+		if ( ! stub ) {
+			return;
+		}
+		var el = stub.querySelector( '.preorder-stub__release' );
+		if ( ! el ) {
+			return;
+		}
+		el.textContent = text || '';
+	}
+
 	function initVariableProduct( stub, form ) {
 		var button = form.querySelector( '.single_add_to_cart_button' );
 
@@ -56,6 +70,7 @@
 		$( form ).on( 'show_variation', function ( event, variation ) {
 			var isPreorder = variation && variation.preorder_is_preorder;
 			setStubVisible( stub, !! isPreorder );
+			setReleaseText( stub, isPreorder ? variation.preorder_release_text : '' );
 			if ( isPreorder && variation.preorder_add_to_cart_text ) {
 				setButtonText( button, variation.preorder_add_to_cart_text );
 			} else {
@@ -65,6 +80,7 @@
 
 		$( form ).on( 'hide_variation', function () {
 			setStubVisible( stub, false );
+			setReleaseText( stub, '' );
 			setButtonText( button, defaultButtonText( button ) );
 		} );
 	}

@@ -32,12 +32,12 @@ el pedido, para que puedas distinguir las preventas al empaquetar y enviar.
 
 = Features =
 
-* Una casilla <strong>Preventa</strong> en cada producto, en <strong>Datos del producto → General</strong>.
+* Una casilla <strong>Preventa</strong> en cada producto, en <strong>Datos del producto > General</strong>.
 * Una etiqueta personalizada para el botón de añadir al carrito de los productos en preventa, configurada para toda la tienda.
 * Los productos en preventa siguen disponibles para la compra mientras su estado de stock sea agotado.
 * El carrito y el pago muestran una fila «Preventa: Sí» en cada línea de preventa.
 * Esa marca se copia en la línea del pedido, así que aparece en la pantalla del pedido y en los albaranes.
-* Una pantalla <strong>WooCommerce → Preventas</strong> con un interruptor de encendido/apagado para toda la tienda y el texto de botón por defecto.
+* Una pantalla <strong>WooCommerce > Preventas</strong> con un interruptor de encendido/apagado para toda la tienda y el texto de botón por defecto.
 * Al desactivar el interruptor, los productos marcados vuelven a comportarse como productos normales, sin editar cada uno.
 * Los formularios están verificados con nonce y limitados a usuarios que pueden gestionar WooCommerce; la salida se escapa y la entrada se sanea.
 * Se distribuye con una plantilla de traducción (plogins-preorder.pot) y una traducción al polaco; al eliminar el plugin se borra su ajuste.
@@ -45,10 +45,10 @@ el pedido, para que puedas distinguir las preventas al empaquetar y enviar.
 
 == Installation ==
 
-1. Sube el plugin a `/wp-content/plugins/preorder`, o instálalo desde Plugins → Añadir nuevo.
+1. Sube el plugin a `/wp-content/plugins/preorder`, o instálalo desde Plugins > Añadir nuevo.
 2. Actívalo. WooCommerce debe estar activo.
-3. Edita un producto, abre <strong>Datos del producto → General</strong> y marca <strong>Preventa</strong>.
-4. Ajusta los valores por defecto de toda la tienda en <strong>WooCommerce → Preventas</strong>.
+3. Edita un producto, abre <strong>Datos del producto > General</strong> y marca <strong>Preventa</strong>.
+4. Ajusta los valores por defecto de toda la tienda en <strong>WooCommerce > Preventas</strong>.
 
 == Frequently Asked Questions ==
 
@@ -63,7 +63,7 @@ cambia, y las líneas del carrito y del pedido se marcan como preventas.
 
 = Can I pause pre-orders without editing every product? =
 
-Sí. Desactiva el interruptor global en <strong>WooCommerce → Preventas</strong> y los productos
+Sí. Desactiva el interruptor global en <strong>WooCommerce > Preventas</strong> y los productos
 marcados se comportan como productos normales hasta que lo vuelvas a activar.
 
 = Can guests buy pre-order products? =
@@ -82,7 +82,7 @@ Sí. Este plugin es compatible con WordPress Multisite. Actívalo en toda la red
 == Screenshots ==
 
 1. El campo de preventa en el editor de productos de WooCommerce.
-2. La pantalla de ajustes WooCommerce → Preventas.
+2. La pantalla de ajustes WooCommerce > Preventas.
 
 == External Services ==
 

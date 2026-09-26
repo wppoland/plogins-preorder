@@ -55,7 +55,34 @@ final class ProductMeta
             return false;
         }
 
-        foreach ($product->get_children() as $childId) {
+        $children = $product->get_children();
+
+        if ([] === $children) {
+            return false;
+        }
+
+        // A variation with no flag of its own inherits the parent's, and the
+        // parent has just answered no, so the only question left is whether any
+        // variation carries the flag itself. That is one meta value each, primed
+        // in a single query, rather than a full WC_Product per variation. The
+        // page asks this twice, once to decide on assets and once to render the
+        // stub, so a product with fifty variations and no pre-order anywhere was
+        // building a hundred product objects to be told no.
+        if (! has_filter('preorder/is_preorder')) {
+            update_meta_cache('post', $children);
+
+            foreach ($children as $childId) {
+                if ('yes' === get_post_meta((int) $childId, self::META_ENABLED, true)) {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        // An add-on is filtering the answer, so it has to be asked about every
+        // variation, which means every variation has to be loaded.
+        foreach ($children as $childId) {
             $child = wc_get_product($childId);
             if ($child instanceof \WC_Product && $this->isPreorder($child)) {
                 return true;

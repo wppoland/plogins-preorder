@@ -12,6 +12,7 @@ declare(strict_types=1);
 use Preorder\Admin\ProductDataPanel;
 use Preorder\Admin\Settings as SettingsPage;
 use Preorder\Container;
+use Preorder\Migrator;
 use Preorder\ProductMeta;
 use Preorder\Service\PreorderService;
 use Preorder\Settings;
@@ -19,6 +20,7 @@ use Preorder\Settings;
 defined('ABSPATH') || exit;
 
 return static function (Container $c): void {
+    $c->singleton(Migrator::class, static fn (): Migrator => new Migrator());
     $c->singleton(Settings::class, static fn (): Settings => new Settings());
     $c->singleton(ProductMeta::class, static fn (): ProductMeta => new ProductMeta());
 
