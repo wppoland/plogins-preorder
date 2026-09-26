@@ -32,12 +32,12 @@ Bestellung übernommen, sodass du Vorbestellungen beim Packen und Versenden ause
 
 = Features =
 
-* Ein Kontrollkästchen <strong>Vorbestellung</strong> bei jedem Produkt, unter <strong>Produktdaten → Allgemein</strong>.
+* Ein Kontrollkästchen <strong>Vorbestellung</strong> bei jedem Produkt, unter <strong>Produktdaten > Allgemein</strong>.
 * Ein individueller Button-Text für vorbestellbare Produkte, shopweit festgelegt.
 * Vorbestellbare Produkte bleiben kaufbar, solange ihr Lagerstatus „nicht vorrätig“ ist.
 * Warenkorb und Kasse zeigen bei jeder Vorbestellungszeile eine Zeile „Vorbestellung: Ja“.
 * Diese Markierung wird in die Bestellposition übernommen, sodass sie auf dem Bestellbildschirm und den Lieferscheinen erscheint.
-* Ein Bildschirm <strong>WooCommerce → Vorbestellungen</strong> mit einem shopweiten Ein/Aus-Schalter und dem Standard-Button-Text.
+* Ein Bildschirm <strong>WooCommerce > Vorbestellungen</strong> mit einem shopweiten Ein/Aus-Schalter und dem Standard-Button-Text.
 * Wird der Ein/Aus-Schalter ausgeschaltet, verhalten sich markierte Produkte wieder wie normale Produkte, ohne dass du jedes einzeln bearbeiten musst.
 * Formulare sind nonce-geprüft und auf Nutzer beschränkt, die WooCommerce verwalten können; die Ausgabe wird escaped und die Eingabe bereinigt.
 * Wird mit einer Übersetzungsvorlage (plogins-preorder.pot) und einer polnischen Übersetzung geliefert; beim Entfernen des Plugins wird seine Einstellung gelöscht.
@@ -45,10 +45,10 @@ Bestellung übernommen, sodass du Vorbestellungen beim Packen und Versenden ause
 
 == Installation ==
 
-1. Lade das Plugin nach `/wp-content/plugins/preorder` hoch oder installiere es über Plugins → Installieren.
+1. Lade das Plugin nach `/wp-content/plugins/preorder` hoch oder installiere es über Plugins > Installieren.
 2. Aktiviere es. WooCommerce muss aktiv sein.
-3. Bearbeite ein Produkt, öffne <strong>Produktdaten → Allgemein</strong> und setze bei <strong>Vorbestellung</strong> ein Häkchen.
-4. Passe die shopweiten Standardwerte unter <strong>WooCommerce → Vorbestellungen</strong> an.
+3. Bearbeite ein Produkt, öffne <strong>Produktdaten > Allgemein</strong> und setze bei <strong>Vorbestellung</strong> ein Häkchen.
+4. Passe die shopweiten Standardwerte unter <strong>WooCommerce > Vorbestellungen</strong> an.
 
 == Frequently Asked Questions ==
 
@@ -63,7 +63,7 @@ Es wird kaufbar, auch wenn es nicht vorrätig ist, sein Button-Text zum Hinzufü
 
 = Can I pause pre-orders without editing every product? =
 
-Ja. Schalte den globalen Schalter unter <strong>WooCommerce → Vorbestellungen</strong> aus, dann verhalten sich
+Ja. Schalte den globalen Schalter unter <strong>WooCommerce > Vorbestellungen</strong> aus, dann verhalten sich
 markierte Produkte wie normale Produkte, bis du ihn wieder einschaltest.
 
 = Can guests buy pre-order products? =
@@ -82,7 +82,7 @@ Ja. Dieses Plugin ist mit WordPress Multisite kompatibel. Aktiviere es netzwerkw
 == Screenshots ==
 
 1. Das Vorbestellungsfeld im WooCommerce-Produkteditor.
-2. Der Einstellungsbildschirm WooCommerce → Vorbestellungen.
+2. Der Einstellungsbildschirm WooCommerce > Vorbestellungen.
 
 == External Services ==
 

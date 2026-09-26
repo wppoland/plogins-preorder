@@ -29,14 +29,14 @@ final class ProductDataPanel implements HasHooks
 
         woocommerce_wp_checkbox([
             'id'          => ProductMeta::META_ENABLED,
-            'label'       => __('Pre-order', 'plogins-preorder'),
-            'description' => __('Sell this product as a pre-order. It stays purchasable even when out of stock.', 'plogins-preorder'),
+            'label'       => __('Pre-order', 'rezervo'),
+            'description' => __('Sell this product as a pre-order. It stays purchasable even when out of stock.', 'rezervo'),
         ]);
 
         woocommerce_wp_text_input([
             'id'          => ProductMeta::META_RELEASE_DATE,
-            'label'       => __('Expected release date', 'plogins-preorder'),
-            'description' => __('Optional. Shown on the product page and used by add-ons for release notifications.', 'plogins-preorder'),
+            'label'       => __('Expected release date', 'rezervo'),
+            'description' => __('Optional. Shown on the product page and used by add-ons for release notifications.', 'rezervo'),
             'type'        => 'date',
             'value'       => $this->releaseDateValue(),
         ]);
@@ -63,12 +63,12 @@ final class ProductDataPanel implements HasHooks
 
     public function saveFields(\WC_Product $product): void
     {
-        // WooCommerce verifies woocommerce_meta_nonce before this hook fires; re-check defensively.
-        $nonce = isset($_POST['woocommerce_meta_nonce'])
-            ? sanitize_text_field(wp_unslash((string) $_POST['woocommerce_meta_nonce']))
-            : '';
+        // The product editor's own nonce field is verified here, before any field is read.
+        if (! isset($_POST['woocommerce_meta_nonce']) || ! wp_verify_nonce(sanitize_text_field(wp_unslash((string) $_POST['woocommerce_meta_nonce'])), 'woocommerce_save_data')) {
+            return;
+        }
 
-        if ('' === $nonce || ! wp_verify_nonce($nonce, 'woocommerce_save_data')) {
+        if (! current_user_can('edit_product', $product->get_id())) {
             return;
         }
 
