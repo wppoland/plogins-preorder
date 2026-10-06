@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Preorder - Pre-Orders for WooCommerce 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/rezervo\n"
-"POT-Creation-Date: 2026-09-08T13:42:48+00:00\n"
+"POT-Creation-Date: 2026-10-05T11:15:19+00:00\n"
 "PO-Revision-Date: 2026-06-16T20:23:51+00:00\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
 "Language-Team: German <de@li.org>\n"
@@ -24,7 +24,7 @@ msgstr "Rezervo - Vorbestellungen für WooCommerce"
 #. Plugin URI of the plugin
 #: rezervo.php
 msgid "https://plogins.com/plogins-preorder/"
-msgstr ""
+msgstr "https://plogins.com/plogins-preorder/"
 
 #. Description of the plugin
 #: rezervo.php
@@ -39,19 +39,19 @@ msgstr ""
 #. Author of the plugin
 #: rezervo.php
 msgid "WPPoland.com"
-msgstr ""
+msgstr "WPPoland.com"
 
 #. Author URI of the plugin
 #: rezervo.php
 msgid "https://wppoland.com"
-msgstr ""
+msgstr "https://wppoland.com"
 
 #: rezervo.php:48
 msgid "Rezervo requires WooCommerce to be active."
-msgstr ""
+msgstr "Rezervo erfordert ein aktives WooCommerce."
 
-#: src/Admin/ProductDataPanel.php:32 src/Service/PreorderService.php:258
-#: src/Service/PreorderService.php:280
+#: src/Admin/ProductDataPanel.php:32 src/Service/PreorderService.php:289
+#: src/Service/PreorderService.php:311
 msgid "Pre-order"
 msgstr "Vorbestellung"
 
@@ -65,70 +65,64 @@ msgstr ""
 
 #: src/Admin/ProductDataPanel.php:38
 msgid "Expected release date"
-msgstr ""
+msgstr "Voraussichtliches Erscheinungsdatum"
 
 #: src/Admin/ProductDataPanel.php:39
 msgid ""
 "Optional. Shown on the product page and used by add-ons for release "
 "notifications."
 msgstr ""
+"Optional. Wird auf der Produktseite angezeigt und von Erweiterungen für "
+"Benachrichtigungen zum Erscheinen genutzt."
 
-#: src/Admin/ProUpsell.php:78
-msgid "Wkrótce"
-msgstr "Demnächst"
-
-#: src/Admin/ProUpsell.php:78
+#: src/Admin/ProUpsell.php:85
 msgid "Coming soon"
 msgstr "Demnächst"
 
 #. translators: 1: currency symbol, 2: yearly price
-#: src/Admin/ProUpsell.php:84
+#: src/Admin/ProUpsell.php:91
 #, php-format
 msgid "from %1$s%2$d/yr"
 msgstr "ab %1$s%2$d/Jahr"
 
-#: src/Admin/ProUpsell.php:93
+#: src/Admin/ProUpsell.php:100
 msgid "Upgrade to PRO"
 msgstr "Auf PRO upgraden"
 
-#: src/Admin/ProUpsell.php:94
-msgid "Powiadom mnie"
-msgstr "Benachrichtige mich"
-
-#: src/Admin/ProUpsell.php:94
+#: src/Admin/ProUpsell.php:101
 msgid "Get notified"
 msgstr "Benachrichtige mich"
 
-#: src/Admin/ProUpsell.php:124
+#: src/Admin/ProUpsell.php:131
 msgid "Permission denied."
 msgstr "Zugriff verweigert."
 
 #. translators: %s: PRO edition name
-#: src/Admin/ProUpsell.php:154
+#: src/Admin/ProUpsell.php:161
 #, php-format
 msgid "Do more with %s"
 msgstr "Mehr erreichen mit %s"
 
-#: src/Admin/ProUpsell.php:161
+#: src/Admin/ProUpsell.php:168
 msgid "Dismiss this notice"
 msgstr "Diesen Hinweis ausblenden"
 
-#: src/Admin/ProUpsell.php:178
+#: src/Admin/ProUpsell.php:190
 msgid "Unlock every PRO feature"
 msgstr "Alle PRO-Funktionen freischalten"
 
-#: src/Admin/ProUpsell.php:191
+#: src/Admin/ProUpsell.php:203
 msgid "one licence, every PRO feature"
 msgstr "eine Lizenz, alle PRO-Funktionen"
 
 #. translators: %s: PRO edition name
-#: src/Admin/ProUpsell.php:210
+#: src/Admin/ProUpsell.php:222
 #, php-format
 msgid "What %s adds"
 msgstr "Was %s ergänzt"
 
 #: src/Admin/Settings.php:54 src/Admin/Settings.php:55
-#: src/Admin/Settings.php:131
+#: src/Admin/Settings.php:132
 msgid "Pre-orders"
 msgstr "Vorbestellungen"
 
@@ -136,105 +130,113 @@ msgstr "Vorbestellungen"
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: src/Admin/Settings.php:137
+#: src/Admin/Settings.php:138
 msgid "Settings saved."
 msgstr "Einstellungen gespeichert."
 
-#: src/Admin/Settings.php:142
+#: src/Admin/Settings.php:143
 msgid ""
 "Flag any product as a pre-order from the product editor (Product data > "
 "General). The options here set the store-wide defaults that those products "
 "inherit."
 msgstr ""
 "Markiere jedes Produkt im Produkteditor als Vorbestellung (Produktdaten > "
-"Allgemein). Die Optionen hier legen die geschäftsweiten "
-"Standardeinstellungen fest, die diese Produkte übernehmen."
+"Allgemein). Die Optionen hier legen die geschäftsweiten Standardeinstellungen"
+" fest, die diese Produkte übernehmen."
 
-#: src/Admin/Settings.php:150
+#: src/Admin/Settings.php:151
 msgid "Storefront behaviour"
 msgstr "Verhalten im Schaufenster"
 
-#: src/Admin/Settings.php:152
+#: src/Admin/Settings.php:153
 msgid "Controls whether the pre-order rules run on your live store."
 msgstr "Steuert, ob die Vorbestellungsregeln in deinem Live-Shop gelten."
 
-#: src/Admin/Settings.php:159
+#: src/Admin/Settings.php:160
 msgid "Enable pre-orders"
 msgstr "Vorbestellungen aktivieren"
 
-#: src/Admin/Settings.php:171
+#: src/Admin/Settings.php:172
 msgid "Apply pre-order behaviour on the storefront."
 msgstr "Wende das Vorbestellungsverhalten im Store an."
 
-#: src/Admin/Settings.php:174
+#: src/Admin/Settings.php:175
 msgid ""
 "Lets flagged products stay purchasable while out of stock and shows the pre-"
-"order button. Turn this off to pause every pre-order store-wide in one "
-"click, without un-flagging each product. Default: on."
+"order button. Turn this off to pause every pre-order store-wide in one click,"
+" without un-flagging each product. Default: on."
 msgstr ""
 "Ermöglicht, dass markierte Produkte käuflich bleiben, auch wenn sie nicht "
 "vorrätig sind, und zeigt die Schaltfläche „Vorbestellen“ an. Deaktiviere "
 "diese Option, um jede Vorbestellung im gesamten Geschäft mit einem Klick zu "
 "pausieren, ohne die Markierung jedes Produkts aufzuheben. Standard: ein."
 
-#: src/Admin/Settings.php:183
+#: src/Admin/Settings.php:184
 msgid "Pre-order button"
 msgstr "Schaltfläche „Vorbestellen“."
 
-#: src/Admin/Settings.php:185
+#: src/Admin/Settings.php:186
 msgid "The label shoppers see in place of the usual add-to-cart text."
 msgstr ""
 "Das Etikett wird den Käufern anstelle des üblichen Add-to-Cart-Textes "
 "angezeigt."
 
-#: src/Admin/Settings.php:192
+#: src/Admin/Settings.php:193
 msgid "Default button text"
 msgstr "Standard-Schaltflächentext"
 
-#: src/Admin/Settings.php:205
+#: src/Admin/Settings.php:206
 msgid "Shoppers see:"
 msgstr "Käufer sehen:"
 
 #. translators: %s: default button label, e.g. "Pre-order now".
-#: src/Admin/Settings.php:212
+#: src/Admin/Settings.php:213
 #, php-format
 msgid ""
 "Replaces the add-to-cart label on pre-order products across the store. Leave "
 "blank to use %s."
 msgstr ""
+"Ersetzt im gesamten Shop die Beschriftung „In den Warenkorb“ bei "
+"Vorbestellungsprodukten. Lass das Feld leer, um %s zu verwenden."
 
-#: src/Admin/Settings.php:223
+#: src/Admin/Settings.php:224
 msgid "Save changes"
 msgstr "Änderungen speichern"
 
-#: src/Admin/Settings.php:234
+#: src/Admin/Settings.php:235
 msgid "You do not have permission to manage these settings."
 msgstr "Du hast keine Berechtigung, diese Einstellungen zu verwalten."
 
-#: src/Service/PreorderService.php:176
+#. translators: %s: formatted release date
+#: src/Service/PreorderService.php:187
+#, php-format
+msgid "Expected release: %s"
+msgstr "Voraussichtliches Erscheinen: %s"
+
+#: src/Service/PreorderService.php:201
 msgid "Reserved as a pre-order"
 msgstr "Als Vorbestellung reserviert"
 
-#: src/Service/PreorderService.php:177
+#: src/Service/PreorderService.php:202
 msgid ""
 "Not in stock yet, your order holds a place in line and ships when it arrives."
 msgstr ""
 "Noch nicht auf Lager, deine Bestellung bleibt in der Warteschlange und wird "
 "versendet, sobald sie eintrifft."
 
-#. translators: %s: formatted release date
-#: src/Service/PreorderService.php:196
-#, php-format
-msgid "Expected release: %s"
-msgstr ""
-
-#: src/Service/PreorderService.php:259 src/Service/PreorderService.php:280
+#: src/Service/PreorderService.php:290 src/Service/PreorderService.php:311
 msgid "Yes"
 msgstr "Ja"
 
 #: src/Service/Texts.php:33
 msgid "Pre-order now"
 msgstr "jetzt vorbestellen"
+
+#~ msgid "Wkrótce"
+#~ msgstr "Demnächst"
+
+#~ msgid "Powiadom mnie"
+#~ msgstr "Benachrichtige mich"
 
 #~ msgid "https://plogins.com/preorder/"
 #~ msgstr "https://plogins.com/de/preorder/"
@@ -245,20 +247,19 @@ msgstr "jetzt vorbestellen"
 #~ msgid "https://plogins.com/"
 #~ msgstr "https://plogins.com/"
 
-#~ msgid ""
-#~ "Rezervo - Pre-Orders for WooCommerce requires WooCommerce to be active."
+#~ msgid "Rezervo - Pre-Orders for WooCommerce requires WooCommerce to be active."
 #~ msgstr ""
 #~ "Plogins Vorbestellung, Vorbestellungen für WooCommerce erfordern, dass "
 #~ "WooCommerce aktiv ist."
 
 #, php-format
 #~ msgid ""
-#~ "Replaces the add-to-cart label on pre-order products. Leave blank to use "
-#~ "%s. Any single product can override this from its own editor."
+#~ "Replaces the add-to-cart label on pre-order products. Leave blank to use %s. "
+#~ "Any single product can override this from its own editor."
 #~ msgstr ""
-#~ "Ersetzt das Add-to-Cart-Etikett bei vorbestellten Produkten. Lass das "
-#~ "Feld leer, um %s zu verwenden. Jedes einzelne Produkt kann dies in seinem "
-#~ "eigenen Editor überschreiben."
+#~ "Ersetzt das Add-to-Cart-Etikett bei vorbestellten Produkten. Lass das Feld "
+#~ "leer, um %s zu verwenden. Jedes einzelne Produkt kann dies in seinem eigenen "
+#~ "Editor überschreiben."
 
 #, php-format
 #~ msgid "od %d zł/rok"
