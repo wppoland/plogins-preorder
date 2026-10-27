@@ -43,6 +43,32 @@ the order, so you can tell pre-orders apart when you pack and ship.
 * Ships with a translation template (rezervo.pot) and a Polish translation; removing the plugin deletes its setting.
 * Works with WooCommerce HPOS and the cart and checkout blocks.
 
+== Rezervo Pro ==
+
+Rezervo Pro is a separate paid plugin that extends Rezervo.
+
+Included in Rezervo:
+
+* Pre-order flag
+* Reservation note
+* Custom button label
+* Purchasable when out of stock
+* Cart and checkout flagging
+
+Rezervo Pro adds:
+
+* Incentive discount
+* Checkout deposit
+* Per-variation pre-orders
+* Release emails
+* Discount and deposit settings
+
+The free edition is not a trial and its features stay available without a time limit.
+
+* **Rezervo Pro** - [plogins.com/plogins-preorder-pro/](https://plogins.com/plogins-preorder-pro/)
+* **Compare editions and pricing** - [plogins.com/plogins-preorder-pro/pricing/](https://plogins.com/plogins-preorder-pro/pricing/)
+* **PRO documentation** - [plogins.com/plogins-preorder-pro/docs/](https://plogins.com/plogins-preorder-pro/docs/)
+
 == Installation ==
 
 1. Upload the plugin to `/wp-content/plugins/rezervo`, or install via Plugins > Add New.
