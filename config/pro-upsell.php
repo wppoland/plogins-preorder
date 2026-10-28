@@ -4,14 +4,14 @@
  * scripts/gen-pro-upsell.mjs. The admin upsell renders this; curate the
  * feature list to fit this plugin's settings screen (do not invent features).
  *
- * @package plogins-preorder-pro
+ * @package rezervo-pro
  */
 
 defined('ABSPATH') || exit;
 
 return [
     'name'       => 'Rezervo Pro',
-    'url'        => 'https://plogins.com/plogins-preorder-pro/pricing/',
+    'url'        => 'https://plogins.com/rezervo-pro/pricing/',
     'sellable'   => true,
     'price_from' => 29,
     'currency'   => 'EUR',
