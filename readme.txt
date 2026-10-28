@@ -4,7 +4,7 @@ Tags: woocommerce, preorder, pre-order, backorder, out of stock
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.1.3
+Stable tag: 1.1.4
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -24,10 +24,10 @@ the order, so you can tell pre-orders apart when you pack and ship.
 
 = Documentation and links =
 
-* **Documentation**: [plogins.com/plogins-preorder/docs/](https://plogins.com/plogins-preorder/docs/)
-* **Plugin page**: [plogins.com/plogins-preorder/](https://plogins.com/plogins-preorder/)
-* **Source code**: [github.com/wppoland/plogins-preorder](https://github.com/wppoland/plogins-preorder)
-* **Bug reports and feature requests**: [github.com/wppoland/plogins-preorder/issues](https://github.com/wppoland/plogins-preorder/issues)
+* **Documentation**: [plogins.com/rezervo/docs/](https://plogins.com/rezervo/docs/)
+* **Plugin page**: [plogins.com/rezervo/](https://plogins.com/rezervo/)
+* **Source code**: [github.com/wppoland/rezervo](https://github.com/wppoland/rezervo)
+* **Bug reports and feature requests**: [github.com/wppoland/rezervo/issues](https://github.com/wppoland/rezervo/issues)
 
 
 = Features =
@@ -65,9 +65,9 @@ Rezervo Pro adds:
 
 The free edition is not a trial and its features stay available without a time limit.
 
-* **Rezervo Pro** - [plogins.com/plogins-preorder-pro/](https://plogins.com/plogins-preorder-pro/)
-* **Compare editions and pricing** - [plogins.com/plogins-preorder-pro/pricing/](https://plogins.com/plogins-preorder-pro/pricing/)
-* **PRO documentation** - [plogins.com/plogins-preorder-pro/docs/](https://plogins.com/plogins-preorder-pro/docs/)
+* **Rezervo Pro** - [plogins.com/rezervo-pro/](https://plogins.com/rezervo-pro/)
+* **Compare editions and pricing** - [plogins.com/rezervo-pro/pricing/](https://plogins.com/rezervo-pro/pricing/)
+* **PRO documentation** - [plogins.com/rezervo-pro/docs/](https://plogins.com/rezervo-pro/docs/)
 
 == Installation ==
 
@@ -125,6 +125,9 @@ plugin.
 Rezervo is fully translatable and ships the `rezervo.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.1.4 =
+* Links point at the new plogins.com address and the renamed GitHub repository.
 
 = 1.1.3 =
 * The upgrade notice's "Coming soon" and "Get notified" labels are English source strings for every language; Polish sites used to get their own Polish source text, which translators in other languages then saw untranslated.

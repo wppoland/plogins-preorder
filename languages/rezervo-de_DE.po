@@ -23,8 +23,8 @@ msgstr "Rezervo - Vorbestellungen für WooCommerce"
 
 #. Plugin URI of the plugin
 #: rezervo.php
-msgid "https://plogins.com/plogins-preorder/"
-msgstr "https://plogins.com/plogins-preorder/"
+msgid "https://plogins.com/rezervo/"
+msgstr "https://plogins.com/rezervo/"
 
 #. Description of the plugin
 #: rezervo.php
