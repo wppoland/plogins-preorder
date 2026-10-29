@@ -127,8 +127,8 @@ Rezervo is fully translatable and ships the `rezervo.pot` template. Translations
 == Changelog ==
 
 = 1.1.5 =
-* Added: with Plogins Waitlist active, a pre-order product or variation no longer shows a "Notify me" form next to its Pre-order button. Variations that are not pre-orders keep the waitlist.
-* Added: with Klepsidro active, the countdown on a pre-order product runs to the start of its release day (store timezone) and reads "Releases in", with no date to enter twice. A variable product counts down to its first pre-order variation still to come out. The release date takes precedence over a sale end; a past or missing release date leaves the countdown as Klepsidro sets it.
+* Added: with Plogins Waitlist 1.1.5 or later active, a pre-order product or variation no longer shows a "Notify me" form next to its Pre-order button. Variations that are not pre-orders keep the waitlist.
+* Added: with Klepsidro 1.1.5 or later active, the countdown on a pre-order product runs to the start of its release day (store timezone) and reads "Releases in", with no date to enter twice. A variable product counts down to its first pre-order variation still to come out. The release date takes precedence over a sale end; a past or missing release date leaves the countdown as Klepsidro sets it.
 
 = 1.1.4 =
 * Links point at the new plogins.com address and the renamed GitHub repository.
