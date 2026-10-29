@@ -58,6 +58,125 @@ final class PreorderService implements HasHooks
         add_filter('woocommerce_add_cart_item_data', [$this, 'addCartItemData'], 10, 3);
         add_filter('woocommerce_get_item_data', [$this, 'displayCartItemData'], 10, 2);
         add_action('woocommerce_checkout_create_order_line_item', [$this, 'addOrderItemMeta'], 10, 4);
+
+        // Partner plugins. Each filter only runs when its plugin is active.
+        // Waitlist: a pre-order already has its own button, no "Notify me" beside it.
+        add_filter('plogins_waitlist_accepts_subscriptions', [$this, 'filterWaitlistAccepts'], 10, 2);
+        // Klepsidro: count down to the release date instead of asking for it twice.
+        add_filter('ticker/end_timestamp', [$this, 'filterCountdownEnd'], 10, 2);
+        add_filter('ticker/template/args', [$this, 'filterCountdownArgs'], 10, 2);
+    }
+
+    /**
+     * Take a pre-order product or variation off the Waitlist.
+     *
+     * A variable parent passes through: the waitlist asks again per variation,
+     * so a product mixing pre-order and in-stock variations keeps the form for
+     * the ones that are simply out of stock.
+     */
+    public function filterWaitlistAccepts(bool $accepts, mixed $product): bool
+    {
+        if (! $accepts || ! $product instanceof \WC_Product || $product->is_type('variable')) {
+            return $accepts;
+        }
+
+        return ! $this->applies($product);
+    }
+
+    /**
+     * Klepsidro end time: the pre-order release date when one is still ahead.
+     *
+     * The release date wins over a sale end or a campaign date, since it is
+     * the date a shopper reserving the product is waiting for. A past or
+     * missing release date leaves Klepsidro's own answer alone.
+     */
+    public function filterCountdownEnd(mixed $timestamp, mixed $product): mixed
+    {
+        if (! $product instanceof \WC_Product) {
+            return $timestamp;
+        }
+
+        return $this->nextReleaseTimestamp($product) ?? $timestamp;
+    }
+
+    /**
+     * Release wording on the Klepsidro timer, so it does not read "Sale ends in".
+     *
+     * Only when the timer actually shows this product's release time, in case
+     * another filter chose a different end.
+     *
+     * @param array<string, mixed> $args
+     * @return array<string, mixed>
+     */
+    public function filterCountdownArgs(array $args, string $template): array
+    {
+        if ('single-product/countdown' !== $template || empty($args['product_id'])) {
+            return $args;
+        }
+
+        $product = wc_get_product((int) $args['product_id']);
+
+        if (! $product instanceof \WC_Product) {
+            return $args;
+        }
+
+        $release = $this->nextReleaseTimestamp($product);
+
+        if (null === $release || ($args['end_ts'] ?? null) !== $release) {
+            return $args;
+        }
+
+        $args['lead'] = __('Releases in', 'rezervo');
+        /* translators: %s: time left until the release, e.g. "2 hrs 5 min". */
+        $args['announce'] = __('Releases in %s', 'rezervo');
+        $args['label'] = __('Release countdown', 'rezervo');
+        $args['expired_message'] = __('The release date has arrived.', 'rezervo');
+
+        return $args;
+    }
+
+    /**
+     * Start of the earliest release day still ahead (store timezone), or null.
+     *
+     * A variable product counts down to the first of its pre-order variations
+     * to come out; a variation without its own date inherits the parent's.
+     */
+    private function nextReleaseTimestamp(\WC_Product $product): ?int
+    {
+        if (! $this->meta->hasPreorderInTree($product)) {
+            return null;
+        }
+
+        $candidates = [$product];
+
+        if ($product->is_type('variable')) {
+            foreach ($product->get_children() as $childId) {
+                $candidates[] = wc_get_product($childId);
+            }
+        }
+
+        $now  = time();
+        $next = null;
+
+        foreach ($candidates as $candidate) {
+            if (! $this->applies($candidate)) {
+                continue;
+            }
+
+            $date = \DateTimeImmutable::createFromFormat('!Y-m-d', $this->meta->releaseDate($candidate), wp_timezone());
+
+            if (! $date instanceof \DateTimeImmutable) {
+                continue;
+            }
+
+            $timestamp = $date->getTimestamp();
+
+            if ($timestamp > $now && (null === $next || $timestamp < $next)) {
+                $next = $timestamp;
+            }
+        }
+
+        return $next;
     }
 
     private function applies(mixed $product): bool
