@@ -43,6 +43,11 @@ the order, so you can tell pre-orders apart when you pack and ship.
 * Ships with a translation template (rezervo.pot) and a Polish translation; removing the plugin deletes its setting.
 * Works with WooCommerce HPOS and the cart and checkout blocks.
 
+= Works with other Plogins plugins =
+
+* [Waitlist - Back in Stock for WooCommerce](https://plogins.com/plogins-waitlist/) - pre-order products and variations show no waitlist form beside the Pre-order button (Waitlist 1.1.5 or later).
+* [Klepsidro - Countdown Timer for WooCommerce](https://plogins.com/klepsidro/) - a pre-order with a future release date counts down to 00:00 on the release day and reads "Releases in" (Klepsidro 1.1.5 or later).
+
 == Rezervo Pro ==
 
 Rezervo Pro is a separate paid plugin that extends Rezervo.
@@ -100,6 +105,10 @@ Yes, when the product is purchasable and your store allows guest checkout.
 
 Cart and order line items are flagged so you and the customer can see which lines are pre-orders.
 
+
+= Does it work with Waitlist and Klepsidro? =
+
+Yes, with no setting, while pre-orders are enabled. Waitlist shows no sign-up form on pre-order products or variations. Klepsidro counts down to the release date you already set, so you do not enter it twice; the release date takes precedence over a sale end.
 
 = Does this plugin work on WordPress Multisite? =
 
