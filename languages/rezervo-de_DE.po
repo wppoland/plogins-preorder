@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Preorder - Pre-Orders for WooCommerce 0.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/rezervo\n"
-"POT-Creation-Date: 2026-10-05T11:15:19+00:00\n"
+"POT-Creation-Date: 2026-10-29T13:42:06+00:00\n"
 "PO-Revision-Date: 2026-06-16T20:23:51+00:00\n"
 "Last-Translator: motylanogha <szatkowski.mariusz@gmail.com>\n"
 "Language-Team: German <de@li.org>\n"
@@ -50,8 +50,8 @@ msgstr "https://wppoland.com"
 msgid "Rezervo requires WooCommerce to be active."
 msgstr "Rezervo erfordert ein aktives WooCommerce."
 
-#: src/Admin/ProductDataPanel.php:32 src/Service/PreorderService.php:289
-#: src/Service/PreorderService.php:311
+#: src/Admin/ProductDataPanel.php:32 src/Service/PreorderService.php:408
+#: src/Service/PreorderService.php:430
 msgid "Pre-order"
 msgstr "Vorbestellung"
 
@@ -141,8 +141,8 @@ msgid ""
 "inherit."
 msgstr ""
 "Markiere jedes Produkt im Produkteditor als Vorbestellung (Produktdaten > "
-"Allgemein). Die Optionen hier legen die geschäftsweiten Standardeinstellungen"
-" fest, die diese Produkte übernehmen."
+"Allgemein). Die Optionen hier legen die geschäftsweiten "
+"Standardeinstellungen fest, die diese Produkte übernehmen."
 
 #: src/Admin/Settings.php:151
 msgid "Storefront behaviour"
@@ -163,8 +163,8 @@ msgstr "Wende das Vorbestellungsverhalten im Store an."
 #: src/Admin/Settings.php:175
 msgid ""
 "Lets flagged products stay purchasable while out of stock and shows the pre-"
-"order button. Turn this off to pause every pre-order store-wide in one click,"
-" without un-flagging each product. Default: on."
+"order button. Turn this off to pause every pre-order store-wide in one "
+"click, without un-flagging each product. Default: on."
 msgstr ""
 "Ermöglicht, dass markierte Produkte käuflich bleiben, auch wenn sie nicht "
 "vorrätig sind, und zeigt die Schaltfläche „Vorbestellen“ an. Deaktiviere "
@@ -207,24 +207,42 @@ msgstr "Änderungen speichern"
 msgid "You do not have permission to manage these settings."
 msgstr "Du hast keine Berechtigung, diese Einstellungen zu verwalten."
 
+#: src/Service/PreorderService.php:129
+msgid "Releases in"
+msgstr ""
+
+#. translators: %s: time left until the release, e.g. "2 hrs 5 min".
+#: src/Service/PreorderService.php:131
+#, php-format
+msgid "Releases in %s"
+msgstr ""
+
+#: src/Service/PreorderService.php:132
+msgid "Release countdown"
+msgstr ""
+
+#: src/Service/PreorderService.php:133
+msgid "The release date has arrived."
+msgstr ""
+
 #. translators: %s: formatted release date
-#: src/Service/PreorderService.php:187
+#: src/Service/PreorderService.php:306
 #, php-format
 msgid "Expected release: %s"
 msgstr "Voraussichtliches Erscheinen: %s"
 
-#: src/Service/PreorderService.php:201
+#: src/Service/PreorderService.php:320
 msgid "Reserved as a pre-order"
 msgstr "Als Vorbestellung reserviert"
 
-#: src/Service/PreorderService.php:202
+#: src/Service/PreorderService.php:321
 msgid ""
 "Not in stock yet, your order holds a place in line and ships when it arrives."
 msgstr ""
 "Noch nicht auf Lager, deine Bestellung bleibt in der Warteschlange und wird "
 "versendet, sobald sie eintrifft."
 
-#: src/Service/PreorderService.php:290 src/Service/PreorderService.php:311
+#: src/Service/PreorderService.php:409 src/Service/PreorderService.php:430
 msgid "Yes"
 msgstr "Ja"
 
@@ -247,19 +265,20 @@ msgstr "jetzt vorbestellen"
 #~ msgid "https://plogins.com/"
 #~ msgstr "https://plogins.com/"
 
-#~ msgid "Rezervo - Pre-Orders for WooCommerce requires WooCommerce to be active."
+#~ msgid ""
+#~ "Rezervo - Pre-Orders for WooCommerce requires WooCommerce to be active."
 #~ msgstr ""
 #~ "Plogins Vorbestellung, Vorbestellungen für WooCommerce erfordern, dass "
 #~ "WooCommerce aktiv ist."
 
 #, php-format
 #~ msgid ""
-#~ "Replaces the add-to-cart label on pre-order products. Leave blank to use %s. "
-#~ "Any single product can override this from its own editor."
+#~ "Replaces the add-to-cart label on pre-order products. Leave blank to use "
+#~ "%s. Any single product can override this from its own editor."
 #~ msgstr ""
-#~ "Ersetzt das Add-to-Cart-Etikett bei vorbestellten Produkten. Lass das Feld "
-#~ "leer, um %s zu verwenden. Jedes einzelne Produkt kann dies in seinem eigenen "
-#~ "Editor überschreiben."
+#~ "Ersetzt das Add-to-Cart-Etikett bei vorbestellten Produkten. Lass das "
+#~ "Feld leer, um %s zu verwenden. Jedes einzelne Produkt kann dies in seinem "
+#~ "eigenen Editor überschreiben."
 
 #, php-format
 #~ msgid "od %d zł/rok"
