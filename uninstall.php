@@ -14,8 +14,26 @@ declare(strict_types=1);
 
 defined('WP_UNINSTALL_PLUGIN') || exit;
 
-delete_option('preorder_settings');
-delete_option('preorder_db_version');
+/**
+ * Remove this plugin's options from the current site.
+ */
+function preorder_uninstall_site(): void
+{
+    delete_option('preorder_settings');
+    delete_option('preorder_db_version');
+}
+
+// Options are per site, so a network uninstall has to visit every site.
+if (is_multisite()) {
+    foreach (get_sites(['fields' => 'ids', 'number' => 0]) as $preorder_site_id) {
+        switch_to_blog((int) $preorder_site_id);
+        preorder_uninstall_site();
+        restore_current_blog();
+    }
+    unset($preorder_site_id);
+} else {
+    preorder_uninstall_site();
+}
 
 // The PRO banner's dismissal is stored per user, so it belongs to the
 // plugin rather than to the site content. User meta is global, not
