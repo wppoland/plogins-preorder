@@ -4,7 +4,7 @@ Tags: woocommerce, preorder, pre-order, backorder, out of stock
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 1.1.5
+Stable tag: 1.1.6
 Requires Plugins: woocommerce
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -134,6 +134,9 @@ plugin.
 Rezervo is fully translatable and ships the `rezervo.pot` template. Translations are delivered by WordPress.org language packs from translate.wordpress.org, which is where Polish, German and Spanish are being contributed; the package itself carries no compiled translation files.
 
 == Changelog ==
+
+= 1.1.6 =
+* Fixed: deleting the plugin on a multisite network now removes its settings from every site, not only the main one.
 
 = 1.1.5 =
 * Added: with Plogins Waitlist 1.1.5 or later active, a pre-order product or variation no longer shows a "Notify me" form next to its Pre-order button. Variations that are not pre-orders keep the waitlist.
